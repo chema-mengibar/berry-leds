@@ -5,11 +5,12 @@ const path = require('path')
 var cors = require('cors');
 var bodyParser = require('body-parser');
 
-// Raspberry IO
-// var rpio = require('rpio'); 
-//var onoff = require('onoff'); 
+const Gpio = require('onoff').Gpio;
 
 // Init
+
+const led = new Gpio(17, 'out');
+
 const PORT = process.env.PORT || 5000
 
 app.use(cors())
@@ -24,14 +25,20 @@ app.post("/color", function(req, res){
   console.log( req.body )
 
   if( req.body.red && req.body.green && req.body.blue ){
-    res.setHeader('Content-Type', 'application/json');
-    res.send( {} );
+    res.status(200).send({ msg : "ok" });
+    led.writeSync( ( req.body.red == 0) );
   }
   else{
-    res.status(500).send({ error : "failed" });
+    res.status(500).send({ msg : "failed" });
   }
 });
 
 app.use( express.static(__dirname + '/public'));
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+/**
+ * 
+ *     res.setHeader('Content-Type', 'application/json');
+    res.send( {} );
+*/
