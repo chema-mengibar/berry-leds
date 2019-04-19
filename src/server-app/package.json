@@ -1,32 +1,22 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "8.9.1"
-  },
+  "name": "Rashpberry server SIde",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "cors": "^2.8.4",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "mongodb": "^3.1.0-beta4"
+    "body-parser": "1.18.3",
+    "cors": "2.8.5",
+    "express": "4.16.4"
   },
-  "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": ""
   },
   "keywords": [
-    "node",
-    "heroku",
     "express"
   ],
   "license": "MIT"

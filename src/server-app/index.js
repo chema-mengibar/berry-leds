@@ -1,62 +1,37 @@
 
-const express = require('express')()
+const express = require('express')
+const app = express()
 const path = require('path')
 var cors = require('cors');
+var bodyParser = require('body-parser');
 
+// Raspberry IO
+// var rpio = require('rpio'); 
+var onoff = require('onoff'); 
+
+// Init
 const PORT = process.env.PORT || 5000
 
-const Mongo = require( "./modules/mongo.js");
+app.use(cors())
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-express.use(cors())
+//POST -> req.body.variable
+//GET -> req.query.variable   ,  req.param.variable   
 
-express.get("/registry", function(req, res){
-    var  path = './data/reports_registry.json';
-    res.sendfile(path, {root: './'});
-});
+app.post("/color", function(req, res){
 
+  console.log( req.body )
 
-
-express.get("/report", function(req, res){
-
-  if( req.query.doc ){
-
-    let pDocId =  req.query.doc;
-    let pCollectionName =  req.query.collection;
-
-    let docContent = Mongo.getDoc( pDocId, pCollectionName );
-
-    docContent.then(
-
-      function( respDocData ){
-        res.setHeader('Content-Type', 'application/json');
-        res.send( respDocData );
-        console.log( respDocData)
-      }
-    )
+  if( req.body.red && req.body.green && req.body.blue ){
+    res.setHeader('Content-Type', 'application/json');
+    res.send( {} );
   }
   else{
-    res.status(500).send({ error : "no doc id in request" });
+    res.status(500).send({ error : "failed" });
   }
-  //var  path = req.params[0] ? req.params[0] : 'index.html';
 });
 
+app.use( express.static(__dirname + '/public'));
 
-
-// express.get("/report", function(req, res){
-//   if( req.query.doc ){
-//     var  path = './data/reports/' + req.query.doc + '.json';
-//     if (fs.existsSync(path)) {
-//       res.sendfile(path, {root: './'});
-//     }
-//     else{
-//       res.status(404).send({ error : "doc id not found " + req.query.doc  });
-//     }
-//   }
-//   else{
-//     res.status(500).send({ error : "no doc id in request" });
-//   }
-//   //var  path = req.params[0] ? req.params[0] : 'index.html';
-// });
-
-
-express.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));

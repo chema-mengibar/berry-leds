@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<meta charset="UTF-8">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <style>
+    html, body{  margin:0;   padding:0; width:100%; height:100%;overflow: hidden; }
+
+    .led{
+      width:100px;
+      height:100px;
+      border: 1px solid grey;
+      border-radius: 50px;
+    }
+
+    .block{
+      width:100%;
+      height:auto;
+      padding:10px;
+    }
+
+    .control{
+      border-bottom:1px solid grey;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="block control">
+    <form id="colorSelectionForm">
+
+      <div class="block inputs">
+       RED: <input type="range" name="red" min="0" max="255"> <span id="display-red"></span> </br>
+       GREEN: <input type="range" name="green" min="0" max="255">  <span id="display-green"></span> </br>
+       BLUE: <input type="range" name="blue" min="0" max="255">  <span id="display-blue"></span> </br>
+      </div>
+      <div class="block form">
+        <input type="submit" value="SEND AGAIN">
+       </div>
+    </form> 
+  </div>
+  <div class="block display">
+    <div class="led"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  window.onload = function() {
+    
+    var inputRed = $( 'input[name="red"]' );
+    var inputGreen = $( 'input[name="green"]' );
+    var inputBlue = $( 'input[name="blue"]' );
+
+    // Trigger-action on change range-inputs
+    function updateLabel( colorRef, inputValue ) {
+      $( '#display-' + colorRef ).html( inputValue );
+    }
+
+    inputRed.on('input', function() {
+      updateLabel('red', this.value );
+      $('#colorSelectionForm').submit();
+    });
+
+    inputGreen.on('input', function() {
+      updateLabel('green', this.value);
+      $('#colorSelectionForm').submit();
+    });
+
+    inputBlue.on('input', function() {
+      updateLabel('blue', this.value);
+      $('#colorSelectionForm').submit();
+    });
+
+    // Submit 
+    $('#colorSelectionForm').submit(function(event) {
+
+      event.preventDefault();
+      var red = inputRed.val();
+      var green = inputGreen.val();
+      var blue = inputBlue.val();
+
+      $('.led').css("background-color", "rgb(" + red + "," + green + "," + blue + ")");
+
+      var dataObject = {
+        'red': red,
+        'green': green,
+        'blue': blue,
+      };
+
+      $.post('/color', dataObject )
+       .done( function( res ) {
+          console.log(res);
+        })
+        .fail(function( xhr, status, error ) {
+          console.log( xhr.status );
+          console.log( xhr.responseJSON );
+        });
+    });
+
+    // On load show values
+    updateLabel('red', inputRed.val());
+    updateLabel('green', inputGreen.val());
+    updateLabel('blue', inputBlue.val());
+    $('#colorSelectionForm').submit();
+
+  }
+</script>
+</html>
+
