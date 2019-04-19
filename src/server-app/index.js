@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 // Raspberry IO
 // var rpio = require('rpio'); 
-var onoff = require('onoff'); 
+//var onoff = require('onoff'); 
 
 // Init
 const PORT = process.env.PORT || 5000
