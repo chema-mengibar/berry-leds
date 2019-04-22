@@ -30,3 +30,12 @@ This project creates a system with which to control some rgb-leds by means of a 
 
 - https://www.w3schools.com/nodejs/nodejs_raspberrypi_gpio_intro.asp
 - https://tutorials-raspberrypi.de/raspberry-pi-nodejs-webserver-installieren-gpios-steuern/
+
+- https://raspberrypi.stackexchange.com/questions/12966/what-is-the-difference-between-board-and-bcm-for-gpio-pin-numbering
+- https://github.com/fivdi/onoff
+- https://www.raspberrypi.org/documentation/usage/gpio/
+
+- https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band
+- https://www.youtube.com/watch?v=UdAnUc7nXYs
+- http://c-kolb.bplaced.net/projekte/elektronik/grundlagen/transistor/transistor_npn_pnp.php
+- https://tutorials-raspberrypi.de/programmieren-lernen-raspberry-pi-gpio-pwm/

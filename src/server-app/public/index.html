@@ -30,9 +30,9 @@
     <form id="colorSelectionForm">
 
       <div class="block inputs">
-       RED: <input type="range" name="red" min="0" max="255"> <span id="display-red"></span> </br>
-       GREEN: <input type="range" name="green" min="0" max="255">  <span id="display-green"></span> </br>
-       BLUE: <input type="range" name="blue" min="0" max="255">  <span id="display-blue"></span> </br>
+       RED: <input type="range" name="red" min="0" max="100"> <span id="display-red"></span> </br>
+       GREEN: <input type="range" name="green" min="0" max="100">  <span id="display-green"></span> </br>
+       BLUE: <input type="range" name="blue" min="0" max="100">  <span id="display-blue"></span> </br>
       </div>
       <div class="block form">
         <input type="submit" value="SEND AGAIN">
@@ -57,17 +57,17 @@
 
     inputRed.on('input', function() {
       updateLabel('red', this.value );
-      //$('#colorSelectionForm').submit();
+      $('#colorSelectionForm').submit();
     });
 
     inputGreen.on('input', function() {
       updateLabel('green', this.value);
-      //$('#colorSelectionForm').submit();
+      $('#colorSelectionForm').submit();
     });
 
     inputBlue.on('input', function() {
       updateLabel('blue', this.value);
-      //$('#colorSelectionForm').submit();
+      $('#colorSelectionForm').submit();
     });
 
     // Submit 
