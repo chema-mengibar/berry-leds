@@ -5,8 +5,7 @@ const path = require('path')
 var cors = require('cors');
 var bodyParser = require('body-parser');
 
-// https://github.com/jperkin/node-rpio
-var rpio = require('rpio');
+var rpio = require('rpio'); // https://github.com/jperkin/node-rpio
 
 var pin_red = 33;	
 var pin_blue = 12;	
@@ -22,10 +21,22 @@ rpio.pwmSetRange(pin_red, 100);
 rpio.pwmSetRange(pin_blue, 100);
 //rpio.pwmSetRange(pin_blue, 100);
 
-
 //const Gpio = require('onoff').Gpio;
 // const led = new Gpio(17, 'out');
 
+// Control
+setTimeout( function(){
+    rpio.pwmSetData(pin_red, 0);
+    rpio.pwmSetData(pin_blue, 50);
+    setTimeout( function(){
+        rpio.pwmSetData(pin_red, 50);
+        rpio.pwmSetData(pin_blue, 0);
+    } ,1000)
+    setTimeout( function(){
+        rpio.pwmSetData(pin_red, 0);
+        rpio.pwmSetData(pin_blue, 0);
+    } ,2000)
+} ,1000)
 
 // Init
 
