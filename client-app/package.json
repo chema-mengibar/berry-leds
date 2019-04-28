@@ -1,0 +1,36 @@
+{
+  "name": "berry-leds_client-app",
+  "homepage ": "",
+  "version": "1.0.0",
+  "description": "A web app to comunicate with the RaspberryPy Node-Server",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_PATH=./src/ react-scripts build",
+    "serve:build": "NODE_PATH=./src/ serve -s build",
+    "start": "NODE_PATH=./src/ react-scripts start",
+    "start:port": "set PORT=3001 && react-scripts start"
+  },
+  "author": "chema-mengibar",
+  "license": "ISC",
+  "dependencies": {
+    "flow-bin": "^0.93.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "2.1.5",
+    "styled-components": "^4.1.3",
+    "serve": "^11.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 5CC0AD69
+P 5550 3950
+F 0 "J?" H 5550 5428 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 5550 5337 50  0000 C CNN
+F 2 "" H 5550 3950 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5CC0AE0D
+P 7750 2300
+F 0 "#PWR0101" H 7750 2150 50  0001 C CNN
+F 1 "+5V" H 7765 2473 50  0000 C CNN
+F 2 "" H 7750 2300 50  0001 C CNN
+F 3 "" H 7750 2300 50  0001 C CNN
+	1    7750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q1
+U 1 1 5CC0AE5D
+P 7450 3500
+F 0 "Q1" H 7641 3546 50  0000 L CNN
+F 1 "BC548" H 7641 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7650 3425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 7450 3500 50  0001 L CNN
+	1    7450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CC0AFB3
+P 6950 3500
+F 0 "R1" V 6743 3500 50  0000 C CNN
+F 1 "1k" V 6834 3500 50  0000 C CNN
+F 2 "" V 6880 3500 50  0001 C CNN
+F 3 "~" H 6950 3500 50  0001 C CNN
+	1    6950 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3500 7250 3500
+$Comp
+L Device:LED_RABG D?
+U 1 1 5CC0B2DA
+P 7750 2650
+F 0 "D?" H 7750 3147 50  0000 C CNN
+F 1 "LED_RABG" H 7750 3056 50  0000 C CNN
+F 2 "" H 7750 2600 50  0001 C CNN
+F 3 "~" H 7750 2600 50  0001 C CNN
+	1    7750 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CC0B446
+P 7950 3050
+F 0 "R6" H 7880 3004 50  0000 R CNN
+F 1 "230" H 7880 3095 50  0000 R CNN
+F 2 "" V 7880 3050 50  0001 C CNN
+F 3 "~" H 7950 3050 50  0001 C CNN
+	1    7950 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CC0B48F
+P 7750 3050
+F 0 "R5" H 7680 3004 50  0000 R CNN
+F 1 "230" H 7680 3095 50  0000 R CNN
+F 2 "" V 7680 3050 50  0001 C CNN
+F 3 "~" H 7750 3050 50  0001 C CNN
+	1    7750 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CC0B4C5
+P 7550 3050
+F 0 "R4" H 7480 3004 50  0000 R CNN
+F 1 "230" H 7480 3095 50  0000 R CNN
+F 2 "" V 7480 3050 50  0001 C CNN
+F 3 "~" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 2850 7950 2900
+Wire Wire Line
+	7750 2850 7750 2900
+Wire Wire Line
+	7550 2850 7550 2900
+$Comp
+L power:Earth #PWR0102
+U 1 1 5CC0B5B9
+P 8300 4750
+F 0 "#PWR0102" H 8300 4500 50  0001 C CNN
+F 1 "Earth" H 8300 4600 50  0001 C CNN
+F 2 "" H 8300 4750 50  0001 C CNN
+F 3 "~" H 8300 4750 50  0001 C CNN
+	1    8300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q2
+U 1 1 5CC0BD9F
+P 7650 3950
+F 0 "Q2" H 7841 3996 50  0000 L CNN
+F 1 "BC548" H 7841 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7850 3875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 7650 3950 50  0001 L CNN
+	1    7650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CC0BDA6
+P 6950 3950
+F 0 "R2" V 6743 3950 50  0000 C CNN
+F 1 "1k" V 6834 3950 50  0000 C CNN
+F 2 "" V 6880 3950 50  0001 C CNN
+F 3 "~" H 6950 3950 50  0001 C CNN
+	1    6950 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q3
+U 1 1 5CC0BE34
+P 7850 4450
+F 0 "Q3" H 8041 4496 50  0000 L CNN
+F 1 "BC548" H 8041 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8050 4375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 7850 4450 50  0001 L CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CC0BE3B
+P 6950 4450
+F 0 "R3" V 6743 4450 50  0000 C CNN
+F 1 "1k" V 6834 4450 50  0000 C CNN
+F 2 "" V 6880 4450 50  0001 C CNN
+F 3 "~" H 6950 4450 50  0001 C CNN
+	1    6950 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 2300 7750 2450
+Wire Wire Line
+	7550 3200 7550 3300
+Wire Wire Line
+	7750 3200 7750 3750
+Wire Wire Line
+	7950 3200 7950 4250
+Wire Wire Line
+	4750 3550 4600 3550
+Wire Wire Line
+	4600 3550 4600 2300
+Wire Wire Line
+	4600 2300 6550 2300
+Wire Wire Line
+	6550 2300 6550 3500
+Wire Wire Line
+	6550 3500 6800 3500
+Wire Wire Line
+	6350 4650 6600 4650
+Wire Wire Line
+	6600 4650 6600 3950
+Wire Wire Line
+	6600 3950 6800 3950
+Wire Wire Line
+	6350 4750 6700 4750
+Wire Wire Line
+	6700 4750 6700 4450
+Wire Wire Line
+	6700 4450 6800 4450
+Wire Wire Line
+	7450 3950 7100 3950
+Wire Wire Line
+	7100 4450 7650 4450
+$Comp
+L Device:R_POT RV1
+U 1 1 5CC0FE13
+P 8300 3700
+F 0 "RV1" V 8093 3700 50  0000 C CNN
+F 1 "22k" V 8184 3700 50  0000 C CNN
+F 2 "" H 8300 3700 50  0001 C CNN
+F 3 "~" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3700 8150 3700
+$Comp
+L Device:R_POT RV2
+U 1 1 5CC10483
+P 8550 4150
+F 0 "RV2" V 8343 4150 50  0000 C CNN
+F 1 "22k" V 8434 4150 50  0000 C CNN
+F 2 "" H 8550 4150 50  0001 C CNN
+F 3 "~" H 8550 4150 50  0001 C CNN
+	1    8550 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 4150 8400 4150
+Wire Wire Line
+	8300 3900 8300 4650
+Wire Wire Line
+	8550 4300 8550 4650
+Wire Wire Line
+	8550 4650 8300 4650
+Connection ~ 8300 4650
+Wire Wire Line
+	8300 4650 8300 4750
+Wire Wire Line
+	7950 4650 8300 4650
+$EndSCHEMATC
