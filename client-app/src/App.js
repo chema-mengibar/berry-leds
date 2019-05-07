@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
-import MainCSS from 'style/main.map';
-import theme from 'shared/theme.map'
+import React, { useState } from 'react';
+import AppWrapper from './components/AppWrapper/AppWrapper';
 import BlockLed from './components/BlockLed/BlockLed';
 import BlockControl from './components/BlockControl/BlockControl';
 
+const App = () => {
 
+  const [ color, setColor] = useState('#FFFFFF');
 
-const AppWrapper = styled.div`
-  background-color: red;
-  height:100%;
-  width:100%;  
- 
-  @media (max-width: 700px) {
-    background-color: ${theme.color.green};
-  }
-`
+  return(
+    <AppWrapper>
+      <BlockLed color={ color } />
+      <BlockControl clicked={(color) => setColor(color)} />
+    </AppWrapper>
+  );
+};
 
-class App extends Component{
-  render(){
-    return(
-      <AppWrapper>
-        <MainCSS/>
-        <BlockLed />
-        <BlockControl />
-      </AppWrapper>
-    )
-  }
-}
 
 export default App;

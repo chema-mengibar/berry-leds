@@ -1,14 +1,14 @@
-import styled, { css } from 'styled-components';
 import React from 'react';
-import theme from 'shared/theme.map'
+import styled, { css } from 'styled-components';
+import theme from 'shared/theme.shared'
 
 const BlockLedWrapper = styled.div`
 
-  background: ${theme.color.grey_dark};
-  // background: -moz-linear-gradient(-45deg, ${theme.color.grey_light} 0%,${theme.color.grey_dark} 63%); 
-  // background: -webkit-linear-gradient(-45deg, ${theme.color.grey_light} 0%,${theme.color.grey_dark} 63%);
-  background: linear-gradient( 165deg, ${theme.color.grey_light} 0%,${theme.color.grey_dark} 63%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${theme.color.grey_light}', endColorstr='${theme.color.grey_dark}',GradientType=1 );
+  background: rgb(${theme.color.grey_dark});
+  // background: -moz-linear-gradient(-45deg, rgb(${theme.color.grey_light}) 0%, rgb(${theme.color.grey_dark}) 63%); 
+  // background: -webkit-linear-gradient(-45deg, rgb(${theme.color.grey_light}) 0%, rgb(${theme.color.grey_dark}) 63%);
+  background: linear-gradient( 165deg, rgb(${theme.color.grey_light}) 0%, rgb(${theme.color.grey_dark}) 63%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(${theme.color.grey_light})', endColorstr='rgb(${theme.color.grey_dark})',GradientType=1 );
   height:auto;
   overflow:auto;
   min-height:200px;
@@ -23,14 +23,14 @@ const BlockLedLabel = styled.div`
   width:100%;
   height:auto;
   float:left;
+`;
 
-  .title{
-    color: ${theme.color.light};
+const Span = styled.span`
+    color:rgb( ${theme.color.light});
     font-weight: ${theme.fontWeigth.primary};
     font-size:28px;
     text-transform: uppercase;
-  }
-`
+`;
 
 const ColorInfo = styled.div`
   float:left;
@@ -39,7 +39,7 @@ const ColorInfo = styled.div`
   overflow:hidde;
   width:100%;
   margin-top:10px;
-`
+`;
 
 const ColorInfoIcon = styled.div`
   float:left;
@@ -53,7 +53,7 @@ const ColorInfoIcon = styled.div`
 
 const ColorInfoData = styled.div`
 
-  color: ${theme.color.light};
+  color: rgb(${theme.color.light});
   text-transform: uppercase;
   line-height: 100px;
   
@@ -68,16 +68,18 @@ const ColorInfoData = styled.div`
 `
 
 const BlockLed = ({
-  hexColor = '#00FFFF'
+  color = '#FF0000'
 }) => {
   return(
     <BlockLedWrapper>
-      <BlockLedLabel> <span class="title">Led</span> </BlockLedLabel>
+      <BlockLedLabel> 
+        <Span>Led</Span>
+      </BlockLedLabel>
       <ColorInfo>
-        <ColorInfoIcon hexcolor={hexColor}></ColorInfoIcon>
+        <ColorInfoIcon hexcolor={color}></ColorInfoIcon>
         <ColorInfoData>
-          <span class="color-info-data__label">HEX</span>
-          <span class="color-info-data__value"> {hexColor} </span>
+          <span className="color-info-data__label">HEX</span>
+          <span className="color-info-data__value"> {color} </span>
         </ColorInfoData>
       </ColorInfo>
     </BlockLedWrapper>

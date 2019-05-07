@@ -1,12 +1,14 @@
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import React from 'react';
-import theme from 'shared/theme.map'
+import uniqueId from 'lodash/uniqueId';
+import theme from 'shared/theme.shared';
+import ColorBarWrapper from './ColorBarWrapper.BlockControl';
 
 const BlockControlWrapper = styled.div`
   height:250px;
   width:100%;  
   padding:30px 0 0;
-  background-color: ${theme.color.grey_dark};
+  background-color: rgb(${theme.color.grey_dark});
 `
 
 const BlockControlLabel = styled.div`
@@ -14,7 +16,7 @@ const BlockControlLabel = styled.div`
   margin-bottom:20px;
 
   .title{
-    color: ${theme.color.light};
+    color:rgb( ${theme.color.light} );
     font-weight: ${theme.fontWeigth.primary};
     font-size:28px;
     text-transform: uppercase;
@@ -23,7 +25,6 @@ const BlockControlLabel = styled.div`
 const MenuMode = styled.div`
   height:30px;
   width:100%;
-
   display:flex;
   flex-direction:row;
 `
@@ -31,76 +32,83 @@ const Tab = styled.div`
   flex-grow:1;
   text-align:center;
   line-height:30px;
-  background: rgba( ${theme.color.alight} , .04);
-  color: ${theme.color.light};
-
+  background: rgba( ${theme.color.light} , .04);
+  color: rgb(${theme.color.light});
+  cursor:pointer;
+  -webkit-transition: background-color 400ms ease-in;
+  -ms-transition: background-color 400ms ease-in;
+  transition: background-color 400ms ease-in;
   
   // ${ (props) => props.active && css`
-  //   background: rgba( ${theme.color.alight}, 1.0);
-  //   color: ${theme.color.grey_dark};
+  //   background: rgba( ${theme.color.light}, 1.0);
+  //   color: rgb(${theme.color.grey_dark});
   // `}
   
   &.active{
-    background: rgba( ${theme.color.alight}, 1.0);
-    color: ${theme.color.grey_dark};
+    background: rgba( ${theme.color.light}, 1.0);
+    color: rgb(${theme.color.grey_dark});
   }
-  
-  
-
 `
 
 const RgbSelector = styled.div`
-
+  background-color:rgb( ${theme.color.light} );
+  height:100%;
+  width:100%;
 `
-const RgbColorRange = styled.div`
-
-`
-const ColorRangeBar = styled.div`
-
-  .color-range-bar__cursor{
-
-  }
-`
-
-const ColorRangeValue = styled.div`
-
-`
-
-const setMode = ( _mode ) => {
-  console.log( _mode )
-}
 
 
 const BlockControl = ({
-  tabs = [
+  clicked = () => {
+    console.log('no color')
+  },
+}) => {
+
+  const tabs = [
     { id:0, label:'PWM', mode:'pwm' },
     { id:1, label:'DEC', mode:'dec' },
     { id:2, label:'HEX', mode:'hex' }
-  ],
-  currentMode ='pwm',
-}) => {
+  ];
+
+  const rgb = [
+    { name:'red', color: '#ff0000'}, 
+    { name:'green', color: '#00FF00'}, 
+    { name:'blue', color: '#00FFFF'}, 
+  ];
+
+  const [mode, setMode] = useState('pwm');
 
   return(
     <BlockControlWrapper>
-      <BlockControlLabel> <span class="title">rgb Control</span> </BlockControlLabel>
-      <MenuMode tabs={tabs}>
+      <BlockControlLabel> <span className="title">rgb Control</span> </BlockControlLabel>
+      <MenuMode>
         {
+          tabs && tabs[0] &&
           tabs.map((item)=>{
-            return <Tab tab={item} 
-                        className={ item.mode === currentMode ? 'active' : '' }
-                        onClick={ ()=> { setMode( item.mode ) } } 
-                    >{item.label}</Tab>
-
+            return (
+              <Tab
+                key={uniqueId('tab_')}
+                tab={item} 
+                className={ item.mode === mode ? 'active' : '' }
+                onClick={ ()=> { 
+                  clicked('#336699');
+                  setMode( item.mode )
+                 } } 
+              >
+                {item.label}
+              </Tab>
+            );
           })
         }
       </MenuMode>
       <RgbSelector>
-        <RgbColorRange>
-          <ColorRangeBar>
-            <div class="color-range-bar__cursor"></div>
-          </ColorRangeBar>
-          <ColorRangeValue></ColorRangeValue>
-        </RgbColorRange>
+        {
+          rgb && rgb[0] &&
+          rgb.map((rgbColor) =>{
+            return (
+              <ColorBarWrapper mode={mode} rgbColor={rgbColor} key={uniqueId('rgb-color_')}/>
+            )
+          } )
+        }
       </RgbSelector>
     </BlockControlWrapper>
   )

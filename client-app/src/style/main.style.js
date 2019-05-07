@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from 'shared/theme.map'
+import theme from 'shared/theme.shared'
 
 const MainCSS = createGlobalStyle`
 
