@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import theme from 'shared/theme.shared'
+import Server from './Server.BlockLed';
 
 import { connect } from 'react-redux';
 import { setColor } from 'store/actions.store';
@@ -15,6 +16,8 @@ const mapDispatchToProps = {
 
 const channelsToHex = channels => {
 
+  Server.sendRGB( channels );
+  
   const rangeTo255Hex = value =>{ 
     let hexStr = Math.round(( value * 255)/ 100).toString(16).toUpperCase();
     return ( hexStr.length === 1 )? '0' + hexStr : hexStr;
