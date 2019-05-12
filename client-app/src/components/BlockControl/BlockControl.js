@@ -4,6 +4,24 @@ import uniqueId from 'lodash/uniqueId';
 import theme from 'shared/theme.shared';
 import ColorBarWrapper from './ColorBarWrapper.BlockControl';
 
+import { connect } from 'react-redux';
+import { setColor } from 'store/actions.store';
+
+const mapStateToProps = (state) => ({
+  color: state.appState.color,
+  channels: mapSingle( state.appState.channels ),
+});
+
+
+const mapSingle = stateProp =>{
+  console.log( stateProp === stateProp )
+  return 1
+}
+
+const mapDispatchToProps = {
+  setColor: setColor
+}
+
 const BlockControlWrapper = styled.div`
   height:250px;
   width:100%;  
@@ -57,11 +75,7 @@ const RgbSelector = styled.div`
 `
 
 
-const BlockControl = ({
-  clicked = () => {
-    console.log('no color')
-  },
-}) => {
+const BlockControl = (props) => {
 
   const tabs = [
     { id:0, label:'PWM', mode:'pwm' },
@@ -77,6 +91,7 @@ const BlockControl = ({
 
   const [mode, setMode] = useState('pwm');
 
+  console.log( 'PROPS COLOR:', props )
   return(
     <BlockControlWrapper>
       <BlockControlLabel> <span className="title">rgb Control</span> </BlockControlLabel>
@@ -90,8 +105,7 @@ const BlockControl = ({
                 tab={item} 
                 className={ item.mode === mode ? 'active' : '' }
                 onClick={ ()=> { 
-                  clicked('#336699');
-                  setMode( item.mode )
+                  setMode( item.mode );
                  } } 
               >
                 {item.label}
@@ -114,4 +128,5 @@ const BlockControl = ({
   )
 }
 
-export default BlockControl
+export default connect( mapStateToProps, mapDispatchToProps )( BlockControl )
+// export default BlockControl;

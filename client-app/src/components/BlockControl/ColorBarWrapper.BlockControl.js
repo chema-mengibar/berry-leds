@@ -1,7 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import theme from 'shared/theme.shared';
-import ReactCursorPosition from 'react-cursor-position';
+
+import { connect } from 'react-redux';
+import { setChannel, setColor } from 'store/actions.store';
+
+const mapStateToProps = (state, ownProps) => ({
+  // rgbColor: ownProps.rgbColor,
+  // mode: ownProps.mode,
+  ...ownProps,
+  channels: state.appState.channels,
+});
+
+const mapDispatchToProps = {
+  setChannel: setChannel,
+}
 
 const RgbColorRange = styled.div`
   display:flex;
@@ -36,32 +49,24 @@ const ColorRangeValue = styled.div`
   text-align:center;
 `
 
-const ColorBarWrapper = (
-  {
-    rgbColor = { name:'white', color:'#ffffff'  },
-    mode = 'pwm'
-  }
+const ColorBarWrapper = ( props
+  // { rgbColor = { name:'white', color:'#ffffff'  },  mode = 'pwm' }
 ) => {
-  const [ rgbChannels, setRgbChannels] = useState( {
-    red:0,
-    green:0,
-    blue:0,
-  } );
 
-  console.log( rgbChannels )
+  const  rgbColor = props.rgbColor; //{ name:'red', color:'#ff0000'  };
+  const mode = props.mode; // 'pwm';
 
+  const [ rgbChannel, setRgbChannel] = useState( 0 );
   const modeMap = {
     pwm: 100,
     dec: 255,
     hex: 255
   };
-  
 
-  const onClickChannel = ( channelValue, channelName ) => {
-    setRgbChannels( prevState =>{ 
-      return { ...prevState, [channelName]: channelValue }
-    } )
-  }
+  useEffect(() => {
+    props.setChannel( rgbChannel, rgbColor.name )
+  }, [rgbChannel]);
+
 
   const valueConversion = ( value ) => {
     let conversion;
@@ -78,14 +83,14 @@ const ColorBarWrapper = (
   return (
     <RgbColorRange>
       <ColorRangeBar onClick={(e)=> { 
-          let coor = Math.round( (e.nativeEvent.offsetX * modeMap[mode] ) / e.currentTarget.getBoundingClientRect().width);
-          onClickChannel( coor, rgbColor.name ) 
+          let yCursorPosition = Math.round( (e.nativeEvent.offsetX * modeMap[mode] ) / e.currentTarget.getBoundingClientRect().width);
+          setRgbChannel( yCursorPosition );
         } } >
-        <ColorRangeCursor color={ rgbColor.color } procent={ valueConversion( rgbChannels[ rgbColor.name ] ) }></ColorRangeCursor>
+        <ColorRangeCursor color={ rgbColor.color } procent={ valueConversion( rgbChannel ) }></ColorRangeCursor>
       </ColorRangeBar>
-      <ColorRangeValue> { rgbChannels[ rgbColor.name ] } </ColorRangeValue>
+      <ColorRangeValue> { rgbChannel } </ColorRangeValue>
     </RgbColorRange>
   )
 }
 
-export default ColorBarWrapper;
+export default connect( mapStateToProps, mapDispatchToProps )( ColorBarWrapper )

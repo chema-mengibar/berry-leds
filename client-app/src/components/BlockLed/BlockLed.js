@@ -2,6 +2,14 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import theme from 'shared/theme.shared'
 
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => ({
+  color: state.appState.color 
+});
+
+
+
 const BlockLedWrapper = styled.div`
 
   background: rgb(${theme.color.grey_dark});
@@ -67,23 +75,21 @@ const ColorInfoData = styled.div`
   }
 `
 
-const BlockLed = ({
-  color = '#FF0000'
-}) => {
+const BlockLed = (props) => {
   return(
     <BlockLedWrapper>
       <BlockLedLabel> 
         <Span>Led</Span>
       </BlockLedLabel>
       <ColorInfo>
-        <ColorInfoIcon hexcolor={color}></ColorInfoIcon>
+        <ColorInfoIcon hexcolor={props.color}></ColorInfoIcon>
         <ColorInfoData>
           <span className="color-info-data__label">HEX</span>
-          <span className="color-info-data__value"> {color} </span>
+          <span className="color-info-data__value"> {props.color} </span>
         </ColorInfoData>
       </ColorInfo>
     </BlockLedWrapper>
   )
 }
 
-export default BlockLed
+export default connect(mapStateToProps)(BlockLed)
