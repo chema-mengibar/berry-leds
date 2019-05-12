@@ -1,6 +1,5 @@
 {
   "name": "berry-leds_client-app",
-  "homepage ": "/berry-leds",
   "version": "1.0.0",
   "description": "A web app to comunicate with the RaspberryPy Node-Server",
   "main": "index.js",
