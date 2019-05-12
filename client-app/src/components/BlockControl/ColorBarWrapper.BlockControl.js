@@ -47,16 +47,17 @@ const ColorRangeValue = styled.div`
   color:rgb(  ${theme.color.light} );
   line-height:40px;
   text-align:center;
+  cursor:pointer;
 `
 
 const ColorBarWrapper = ( props
-  // { rgbColor = { name:'white', color:'#ffffff'  },  mode = 'pwm' }
+  //{ rgbColor = { name:'white', color:'#ffffff'  },  mode = 'pwm' }
 ) => {
 
   const  rgbColor = props.rgbColor; //{ name:'red', color:'#ff0000'  };
   const mode = props.mode; // 'pwm';
 
-  const [ rgbChannel, setRgbChannel] = useState( 0 );
+  const [ rgbChannel, setRgbChannel] = useState( props.channels[ rgbColor.name ] );
   const modeMap = {
     pwm: 100,
     dec: 255,
@@ -69,26 +70,26 @@ const ColorBarWrapper = ( props
 
 
   const valueConversion = ( value ) => {
-    let conversion;
-    if( mode === 'dec' || mode === 'hex' ){
-      conversion =  Math.round(( value*100)/255);
-    }else{
-      conversion = value;
-    }
-    return conversion;
+    let convertedValue =  Math.round(( value * modeMap[mode])/ 100);
+    if (mode === 'hex'){
+      let hex =  convertedValue.toString(16).toUpperCase();
+      convertedValue = ( hex.length === 1 ) ?  '0'+hex : hex;
+    }  
+    return convertedValue;
   }
-
-  //.toString(16);
 
   return (
     <RgbColorRange>
       <ColorRangeBar onClick={(e)=> { 
-          let yCursorPosition = Math.round( (e.nativeEvent.offsetX * modeMap[mode] ) / e.currentTarget.getBoundingClientRect().width);
+          let yCursorPosition = Math.round( (e.nativeEvent.offsetX * 100 ) / e.currentTarget.getBoundingClientRect().width);
           setRgbChannel( yCursorPosition );
         } } >
-        <ColorRangeCursor color={ rgbColor.color } procent={ valueConversion( rgbChannel ) }></ColorRangeCursor>
+        <ColorRangeCursor color={ rgbColor.color } procent={ rgbChannel }></ColorRangeCursor>
       </ColorRangeBar>
-      <ColorRangeValue> { rgbChannel } </ColorRangeValue>
+      <ColorRangeValue onClick={(e)=> { 
+          let xtremValue = (rgbChannel === 100 )? 0 : 100;
+          setRgbChannel( xtremValue );
+        } } > { valueConversion( rgbChannel ) } </ColorRangeValue>
     </RgbColorRange>
   )
 }

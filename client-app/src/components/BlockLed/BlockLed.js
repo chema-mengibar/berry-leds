@@ -3,12 +3,28 @@ import styled, { css } from 'styled-components';
 import theme from 'shared/theme.shared'
 
 import { connect } from 'react-redux';
+import { setColor } from 'store/actions.store';
 
 const mapStateToProps = state => ({
-  color: state.appState.color 
+  color: channelsToHex( state.appState.channels )
 });
 
+const mapDispatchToProps = {
+  setColor: setColor
+}
 
+const channelsToHex = channels => {
+
+  const rangeTo255Hex = value =>{ 
+    let hexStr = Math.round(( value * 255)/ 100).toString(16).toUpperCase();
+    return ( hexStr.length === 1 )? '0' + hexStr : hexStr;
+  };
+
+  let r = rangeTo255Hex(channels.red)
+  let g = rangeTo255Hex(channels.green)
+  let b = rangeTo255Hex(channels.blue)
+  return '#' + r + g + b;
+}
 
 const BlockLedWrapper = styled.div`
 
@@ -17,11 +33,11 @@ const BlockLedWrapper = styled.div`
   // background: -webkit-linear-gradient(-45deg, rgb(${theme.color.grey_light}) 0%, rgb(${theme.color.grey_dark}) 63%);
   background: linear-gradient( 165deg, rgb(${theme.color.grey_light}) 0%, rgb(${theme.color.grey_dark}) 63%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(${theme.color.grey_light})', endColorstr='rgb(${theme.color.grey_dark})',GradientType=1 );
-  height:auto;
   overflow:auto;
   min-height:200px;
   width:100%;  
   padding:30px 20px 0;
+  box-sizing: border-box;
 `
 
 const BlockLedLabel = styled.div`
@@ -92,4 +108,4 @@ const BlockLed = (props) => {
   )
 }
 
-export default connect(mapStateToProps)(BlockLed)
+export default connect( mapStateToProps, mapDispatchToProps )( BlockLed )

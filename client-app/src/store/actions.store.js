@@ -10,3 +10,8 @@ export const setChannel = ( value, channel ) => {
     channel
   }
 }
+
+export const setMode = mode => ({
+  type: 'SET_MODE',
+  mode
+})

@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import uniqueId from 'lodash/uniqueId';
 import theme from 'shared/theme.shared';
 import ColorBarWrapper from './ColorBarWrapper.BlockControl';
-
 import { connect } from 'react-redux';
-import { setColor } from 'store/actions.store';
+import { setMode } from 'store/actions.store';
 
-const mapStateToProps = (state) => ({
-  color: state.appState.color,
-  channels: mapSingle( state.appState.channels ),
+const mapStateToProps = (state, ownProps) => ({
+  ...ownProps,
+  mode: state.appState.mode,
 });
 
-
-const mapSingle = stateProp =>{
-  console.log( stateProp === stateProp )
-  return 1
-}
-
 const mapDispatchToProps = {
-  setColor: setColor
+  storeSetMode: setMode
 }
 
 const BlockControlWrapper = styled.div`
@@ -27,6 +20,8 @@ const BlockControlWrapper = styled.div`
   width:100%;  
   padding:30px 0 0;
   background-color: rgb(${theme.color.grey_dark});
+  flex-grow:1;
+  box-sizing: border-box;
 `
 
 const BlockControlLabel = styled.div`
@@ -74,7 +69,6 @@ const RgbSelector = styled.div`
   width:100%;
 `
 
-
 const BlockControl = (props) => {
 
   const tabs = [
@@ -89,9 +83,8 @@ const BlockControl = (props) => {
     { name:'blue', color: '#00FFFF'}, 
   ];
 
-  const [mode, setMode] = useState('pwm');
+  const mode = props.mode;
 
-  console.log( 'PROPS COLOR:', props )
   return(
     <BlockControlWrapper>
       <BlockControlLabel> <span className="title">rgb Control</span> </BlockControlLabel>
@@ -105,7 +98,7 @@ const BlockControl = (props) => {
                 tab={item} 
                 className={ item.mode === mode ? 'active' : '' }
                 onClick={ ()=> { 
-                  setMode( item.mode );
+                  props.storeSetMode( item.mode );
                  } } 
               >
                 {item.label}
@@ -129,4 +122,3 @@ const BlockControl = (props) => {
 }
 
 export default connect( mapStateToProps, mapDispatchToProps )( BlockControl )
-// export default BlockControl;
