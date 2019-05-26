@@ -32,6 +32,10 @@ export default {
   sendRGB: async(opts) => {
     fetch('/color', {
       method: 'post',
+      headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+      },
       body: JSON.stringify(opts)
     }).then(function(response) {
       return response.json();

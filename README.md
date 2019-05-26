@@ -61,6 +61,9 @@ Consiste en una aplicacion basada en REACT
 
 ## Issues
 
+### 2 Channel PWM
+https://www.adafruit.com/product/815
+
 ### Project installation in Raspberry
 - Node version 
 ```

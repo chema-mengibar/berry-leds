@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "http://motuo.info/berry-leds/precache-manifest.c2f3e30d96d78f3c4d5a7112876142e5.js"
+  "http://localhost:5000/precache-manifest.790e48bfc3676931b073a875b1bf055b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("http://motuo.info/berry-leds/index.html", {
+workbox.routing.registerNavigationRoute("http://localhost:5000/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
