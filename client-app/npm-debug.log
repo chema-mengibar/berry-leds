@@ -1,0 +1,1947 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i' ]
+2 info using npm@1.4.21
+3 info using node@v8.11.1
+4 warn package.json berry-leds_client-app@1.0.0 No repository field.
+5 warn package.json berry-leds_client-app@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/pi/chema/berry-leds_git/client-app',
+7 verbose install   [ 'babel-plugin-styled-components',
+7 verbose install     'flow-bin',
+7 verbose install     'lodash',
+7 verbose install     'react',
+7 verbose install     'react-dom',
+7 verbose install     'react-redux',
+7 verbose install     'react-scripts',
+7 verbose install     'redux',
+7 verbose install     'serve',
+7 verbose install     'styled-components' ] ]
+8 info preinstall berry-leds_client-app@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping react@^16.8.1 /home/pi/chema/berry-leds_git/client-app
+11 verbose already installed skipping react-dom@^16.8.1 /home/pi/chema/berry-leds_git/client-app
+12 verbose cache add [ 'react-redux@^7.0.3', null ]
+13 verbose cache add name=undefined spec="react-redux@^7.0.3" args=["react-redux@^7.0.3",null]
+14 verbose parsed url Url {
+14 verbose parsed url   protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'react-redux@%5E7.0.3',
+14 verbose parsed url   path: 'react-redux@%5E7.0.3',
+14 verbose parsed url   href: 'react-redux@%5E7.0.3' }
+15 verbose cache add [ 'react-scripts@2.1.5', null ]
+16 verbose cache add name=undefined spec="react-scripts@2.1.5" args=["react-scripts@2.1.5",null]
+17 verbose parsed url Url {
+17 verbose parsed url   protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'react-scripts@2.1.5',
+17 verbose parsed url   path: 'react-scripts@2.1.5',
+17 verbose parsed url   href: 'react-scripts@2.1.5' }
+18 verbose already installed skipping redux@^4.0.1 /home/pi/chema/berry-leds_git/client-app
+19 verbose cache add [ 'serve@^11.0.0', null ]
+20 verbose cache add name=undefined spec="serve@^11.0.0" args=["serve@^11.0.0",null]
+21 verbose parsed url Url {
+21 verbose parsed url   protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'serve@%5E11.0.0',
+21 verbose parsed url   path: 'serve@%5E11.0.0',
+21 verbose parsed url   href: 'serve@%5E11.0.0' }
+22 verbose cache add [ 'styled-components@^4.1.3', null ]
+23 verbose cache add name=undefined spec="styled-components@^4.1.3" args=["styled-components@^4.1.3",null]
+24 verbose parsed url Url {
+24 verbose parsed url   protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'styled-components@%5E4.1.3',
+24 verbose parsed url   path: 'styled-components@%5E4.1.3',
+24 verbose parsed url   href: 'styled-components@%5E4.1.3' }
+25 verbose cache add [ 'babel-plugin-styled-components@^1.10.0', null ]
+26 verbose cache add name=undefined spec="babel-plugin-styled-components@^1.10.0" args=["babel-plugin-styled-components@^1.10.0",null]
+27 verbose parsed url Url {
+27 verbose parsed url   protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: 'babel-plugin-styled-components@%5E1.10.0',
+27 verbose parsed url   path: 'babel-plugin-styled-components@%5E1.10.0',
+27 verbose parsed url   href: 'babel-plugin-styled-components@%5E1.10.0' }
+28 verbose already installed skipping flow-bin@^0.93.0 /home/pi/chema/berry-leds_git/client-app
+29 verbose already installed skipping lodash@^4.17.11 /home/pi/chema/berry-leds_git/client-app
+30 verbose cache add name="react-redux" spec="^7.0.3" args=["react-redux","^7.0.3"]
+31 verbose parsed url Url {
+31 verbose parsed url   protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '%5E7.0.3',
+31 verbose parsed url   path: '%5E7.0.3',
+31 verbose parsed url   href: '%5E7.0.3' }
+32 verbose addNamed [ 'react-redux', '^7.0.3' ]
+33 verbose addNamed [ null, '>=7.0.3 <8.0.0' ]
+34 verbose cache add name="react-scripts" spec="2.1.5" args=["react-scripts","2.1.5"]
+35 verbose parsed url Url {
+35 verbose parsed url   protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: '2.1.5',
+35 verbose parsed url   path: '2.1.5',
+35 verbose parsed url   href: '2.1.5' }
+36 verbose addNamed [ 'react-scripts', '2.1.5' ]
+37 verbose addNamed [ '2.1.5', '2.1.5' ]
+38 verbose cache add name="serve" spec="^11.0.0" args=["serve","^11.0.0"]
+39 verbose parsed url Url {
+39 verbose parsed url   protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '%5E11.0.0',
+39 verbose parsed url   path: '%5E11.0.0',
+39 verbose parsed url   href: '%5E11.0.0' }
+40 verbose addNamed [ 'serve', '^11.0.0' ]
+41 verbose addNamed [ null, '>=11.0.0 <12.0.0' ]
+42 verbose cache add name="styled-components" spec="^4.1.3" args=["styled-components","^4.1.3"]
+43 verbose parsed url Url {
+43 verbose parsed url   protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '%5E4.1.3',
+43 verbose parsed url   path: '%5E4.1.3',
+43 verbose parsed url   href: '%5E4.1.3' }
+44 verbose addNamed [ 'styled-components', '^4.1.3' ]
+45 verbose addNamed [ null, '>=4.1.3 <5.0.0' ]
+46 verbose cache add name="babel-plugin-styled-components" spec="^1.10.0" args=["babel-plugin-styled-components","^1.10.0"]
+47 verbose parsed url Url {
+47 verbose parsed url   protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '%5E1.10.0',
+47 verbose parsed url   path: '%5E1.10.0',
+47 verbose parsed url   href: '%5E1.10.0' }
+48 verbose addNamed [ 'babel-plugin-styled-components', '^1.10.0' ]
+49 verbose addNamed [ null, '>=1.10.0 <2.0.0' ]
+50 silly lockFile aaad5184-react-redux-7-0-3 react-redux@^7.0.3
+51 verbose lock react-redux@^7.0.3 /root/.npm/aaad5184-react-redux-7-0-3.lock
+52 silly lockFile 761f2955-react-scripts-2-1-5 react-scripts@2.1.5
+53 verbose lock react-scripts@2.1.5 /root/.npm/761f2955-react-scripts-2-1-5.lock
+54 silly lockFile cf602afb-serve-11-0-0 serve@^11.0.0
+55 verbose lock serve@^11.0.0 /root/.npm/cf602afb-serve-11-0-0.lock
+56 silly lockFile fb622280-styled-components-4-1-3 styled-components@^4.1.3
+57 verbose lock styled-components@^4.1.3 /root/.npm/fb622280-styled-components-4-1-3.lock
+58 silly lockFile 0b33995e--plugin-styled-components-1-10-0 babel-plugin-styled-components@^1.10.0
+59 verbose lock babel-plugin-styled-components@^1.10.0 /root/.npm/0b33995e--plugin-styled-components-1-10-0.lock
+60 silly addNameRange { name: 'react-redux', range: '>=7.0.3 <8.0.0', hasData: false }
+61 silly addNameRange { name: 'serve', range: '>=11.0.0 <12.0.0', hasData: false }
+62 silly addNameRange { name: 'babel-plugin-styled-components',
+62 silly addNameRange   range: '>=1.10.0 <2.0.0',
+62 silly addNameRange   hasData: false }
+63 silly addNameRange { name: 'styled-components',
+63 silly addNameRange   range: '>=4.1.3 <5.0.0',
+63 silly addNameRange   hasData: false }
+64 verbose request where is /react-redux
+65 verbose request registry https://registry.npmjs.org/
+66 verbose request id 7ca4ffbb4a462b9a
+67 verbose url raw /react-redux
+68 verbose url resolving [ 'https://registry.npmjs.org/', './react-redux' ]
+69 verbose url resolved https://registry.npmjs.org/react-redux
+70 verbose request where is https://registry.npmjs.org/react-redux
+71 info trying registry request attempt 1 at 12:16:42
+72 verbose etag W/"573bba66887970d0621412314aa36f56"
+73 http GET https://registry.npmjs.org/react-redux
+74 verbose request where is /react-scripts
+75 verbose request registry https://registry.npmjs.org/
+76 verbose url raw /react-scripts
+77 verbose url resolving [ 'https://registry.npmjs.org/', './react-scripts' ]
+78 verbose url resolved https://registry.npmjs.org/react-scripts
+79 verbose request where is https://registry.npmjs.org/react-scripts
+80 info trying registry request attempt 1 at 12:16:42
+81 verbose etag W/"d35c2db4c75fd2238587f9228d91d1cc"
+82 http GET https://registry.npmjs.org/react-scripts
+83 verbose request where is /babel-plugin-styled-components
+84 verbose request registry https://registry.npmjs.org/
+85 verbose url raw /babel-plugin-styled-components
+86 verbose url resolving [ 'https://registry.npmjs.org/',
+86 verbose url resolving   './babel-plugin-styled-components' ]
+87 verbose url resolved https://registry.npmjs.org/babel-plugin-styled-components
+88 verbose request where is https://registry.npmjs.org/babel-plugin-styled-components
+89 info trying registry request attempt 1 at 12:16:42
+90 verbose etag W/"c08656e5228b9eaff252de53aec7a613"
+91 http GET https://registry.npmjs.org/babel-plugin-styled-components
+92 verbose request where is /serve
+93 verbose request registry https://registry.npmjs.org/
+94 verbose url raw /serve
+95 verbose url resolving [ 'https://registry.npmjs.org/', './serve' ]
+96 verbose url resolved https://registry.npmjs.org/serve
+97 verbose request where is https://registry.npmjs.org/serve
+98 info trying registry request attempt 1 at 12:16:42
+99 verbose etag W/"0b6965a761ec1f809e88d539185856b4"
+100 http GET https://registry.npmjs.org/serve
+101 verbose request where is /styled-components
+102 verbose request registry https://registry.npmjs.org/
+103 verbose url raw /styled-components
+104 verbose url resolving [ 'https://registry.npmjs.org/', './styled-components' ]
+105 verbose url resolved https://registry.npmjs.org/styled-components
+106 verbose request where is https://registry.npmjs.org/styled-components
+107 info trying registry request attempt 1 at 12:16:42
+108 verbose etag W/"19808ff3fb9abfb1887329bf15c20c6b"
+109 http GET https://registry.npmjs.org/styled-components
+110 http 304 https://registry.npmjs.org/react-scripts
+111 silly registry.get cb [ 304,
+111 silly registry.get   { date: 'Sun, 26 May 2019 10:16:42 GMT',
+111 silly registry.get     connection: 'close',
+111 silly registry.get     'set-cookie':
+111 silly registry.get      [ '__cfduid=db025d58959e670172bb36f45e5e2fc141558865802; expires=Mon, 25-May-20 10:16:42 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+111 silly registry.get     'cf-cache-status': 'HIT',
+111 silly registry.get     'cache-control': 'max-age=300',
+111 silly registry.get     'cf-ray': '4dcefec399c0c82f-AMS',
+111 silly registry.get     etag: '"d35c2db4c75fd2238587f9228d91d1cc"',
+111 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+111 silly registry.get     'last-modified': 'Mon, 20 May 2019 21:07:00 GMT',
+111 silly registry.get     vary: 'accept-encoding, accept',
+111 silly registry.get     'x-amz-meta-rev': '261-926e1facaf6405f163daf07c3b5af984',
+111 silly registry.get     server: 'cloudflare' } ]
+112 verbose etag https://registry.npmjs.org/react-scripts from cache
+113 http 304 https://registry.npmjs.org/react-redux
+114 silly registry.get cb [ 304,
+114 silly registry.get   { date: 'Sun, 26 May 2019 10:16:42 GMT',
+114 silly registry.get     connection: 'close',
+114 silly registry.get     'set-cookie':
+114 silly registry.get      [ '__cfduid=d1785e3d404b71bae01fdf20b8ea605761558865802; expires=Mon, 25-May-20 10:16:42 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+114 silly registry.get     'cf-cache-status': 'HIT',
+114 silly registry.get     'cache-control': 'max-age=300',
+114 silly registry.get     'cf-ray': '4dcefec398bb7263-AMS',
+114 silly registry.get     etag: '"573bba66887970d0621412314aa36f56"',
+114 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+114 silly registry.get     'last-modified': 'Mon, 20 May 2019 00:19:43 GMT',
+114 silly registry.get     vary: 'accept-encoding, accept',
+114 silly registry.get     'x-amz-meta-rev': '305-32e170956c328a441c7c7aa26d70e6b5',
+114 silly registry.get     server: 'cloudflare' } ]
+115 verbose etag https://registry.npmjs.org/react-redux from cache
+116 http 304 https://registry.npmjs.org/serve
+117 silly registry.get cb [ 304,
+117 silly registry.get   { date: 'Sun, 26 May 2019 10:16:42 GMT',
+117 silly registry.get     connection: 'close',
+117 silly registry.get     'set-cookie':
+117 silly registry.get      [ '__cfduid=d3baf8abdbfe4889e6d2d0732bf642a2f1558865802; expires=Mon, 25-May-20 10:16:42 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+117 silly registry.get     'cf-cache-status': 'HIT',
+117 silly registry.get     'cache-control': 'max-age=300',
+117 silly registry.get     'cf-ray': '4dcefec3dcdc7221-AMS',
+117 silly registry.get     etag: '"0b6965a761ec1f809e88d539185856b4"',
+117 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+117 silly registry.get     'last-modified': 'Sat, 25 May 2019 17:03:28 GMT',
+117 silly registry.get     vary: 'accept-encoding, accept',
+117 silly registry.get     'x-amz-meta-rev': '317-f2e42a138935115047b8572ef52c079e',
+117 silly registry.get     server: 'cloudflare' } ]
+118 verbose etag https://registry.npmjs.org/serve from cache
+119 http 304 https://registry.npmjs.org/babel-plugin-styled-components
+120 silly registry.get cb [ 304,
+120 silly registry.get   { date: 'Sun, 26 May 2019 10:16:42 GMT',
+120 silly registry.get     connection: 'close',
+120 silly registry.get     'set-cookie':
+120 silly registry.get      [ '__cfduid=db6b6729b819c15562a0a0ab55a1ec3771558865802; expires=Mon, 25-May-20 10:16:42 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+120 silly registry.get     'cf-cache-status': 'HIT',
+120 silly registry.get     'cache-control': 'max-age=300',
+120 silly registry.get     'cf-ray': '4dcefec408172c04-AMS',
+120 silly registry.get     etag: '"c08656e5228b9eaff252de53aec7a613"',
+120 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+120 silly registry.get     'last-modified': 'Mon, 07 Jan 2019 08:19:20 GMT',
+120 silly registry.get     vary: 'accept-encoding, accept',
+120 silly registry.get     'x-amz-meta-rev': '56-bc6d84f16f2bd753ce94dc6d3155d0a6',
+120 silly registry.get     server: 'cloudflare' } ]
+121 verbose etag https://registry.npmjs.org/babel-plugin-styled-components from cache
+122 http 304 https://registry.npmjs.org/styled-components
+123 silly registry.get cb [ 304,
+123 silly registry.get   { date: 'Sun, 26 May 2019 10:16:42 GMT',
+123 silly registry.get     connection: 'close',
+123 silly registry.get     'set-cookie':
+123 silly registry.get      [ '__cfduid=d9397265803d8b83726725900a888c0981558865802; expires=Mon, 25-May-20 10:16:42 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+123 silly registry.get     'cf-cache-status': 'HIT',
+123 silly registry.get     'cache-control': 'max-age=300',
+123 silly registry.get     'cf-ray': '4dcefec41b3d2b9e-AMS',
+123 silly registry.get     etag: '"19808ff3fb9abfb1887329bf15c20c6b"',
+123 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+123 silly registry.get     'last-modified': 'Wed, 08 May 2019 12:19:37 GMT',
+123 silly registry.get     vary: 'accept-encoding, accept',
+123 silly registry.get     'x-amz-meta-rev': '310-a21759c63915f28bcc0c69d72f3c6a63',
+123 silly registry.get     server: 'cloudflare' } ]
+124 verbose etag https://registry.npmjs.org/styled-components from cache
+125 silly addNameRange number 2 { name: 'react-redux', range: '>=7.0.3 <8.0.0', hasData: true }
+126 silly addNameRange versions [ 'react-redux',
+126 silly addNameRange   [ '0.1.0',
+126 silly addNameRange     '1.0.0-alpha',
+126 silly addNameRange     '0.2.0',
+126 silly addNameRange     '0.2.1',
+126 silly addNameRange     '0.2.2',
+126 silly addNameRange     '0.3.0',
+126 silly addNameRange     '0.4.0',
+126 silly addNameRange     '0.5.0',
+126 silly addNameRange     '0.5.1',
+126 silly addNameRange     '0.5.2',
+126 silly addNameRange     '0.5.3',
+126 silly addNameRange     '0.6.0',
+126 silly addNameRange     '0.7.0',
+126 silly addNameRange     '0.8.0',
+126 silly addNameRange     '0.8.1',
+126 silly addNameRange     '0.8.2',
+126 silly addNameRange     '0.9.0',
+126 silly addNameRange     '1.0.0',
+126 silly addNameRange     '1.0.1',
+126 silly addNameRange     '2.0.0',
+126 silly addNameRange     '2.1.0',
+126 silly addNameRange     '2.1.1',
+126 silly addNameRange     '2.1.2',
+126 silly addNameRange     '3.0.0-alpha',
+126 silly addNameRange     '3.0.0',
+126 silly addNameRange     '3.0.1',
+126 silly addNameRange     '3.1.0',
+126 silly addNameRange     '4.0.0',
+126 silly addNameRange     '3.1.1',
+126 silly addNameRange     '4.0.1',
+126 silly addNameRange     '3.1.2',
+126 silly addNameRange     '4.0.2',
+126 silly addNameRange     '4.0.3',
+126 silly addNameRange     '4.0.4',
+126 silly addNameRange     '4.0.5',
+126 silly addNameRange     '4.0.6',
+126 silly addNameRange     '4.1.0',
+126 silly addNameRange     '4.1.1',
+126 silly addNameRange     '4.1.2',
+126 silly addNameRange     '4.2.0',
+126 silly addNameRange     '4.2.1',
+126 silly addNameRange     '4.3.0',
+126 silly addNameRange     '4.4.0',
+126 silly addNameRange     '4.4.1',
+126 silly addNameRange     '4.4.2',
+126 silly addNameRange     '4.4.3',
+126 silly addNameRange     '4.4.4',
+126 silly addNameRange     '4.4.5',
+126 silly addNameRange     '5.0.0-alpha.1',
+126 silly addNameRange     '5.0.0-beta.1',
+126 silly addNameRange     '5.0.0-beta.2',
+126 silly addNameRange     '5.0.0-beta.3',
+126 silly addNameRange     '4.4.6',
+126 silly addNameRange     '5.0.0-rc.1',
+126 silly addNameRange     '5.0.0-rc.2',
+126 silly addNameRange     '5.0.0',
+126 silly addNameRange     '5.0.1',
+126 silly addNameRange     '5.0.2',
+126 silly addNameRange     '5.0.3',
+126 silly addNameRange     '4.4.7',
+126 silly addNameRange     '5.0.4',
+126 silly addNameRange     '4.4.8',
+126 silly addNameRange     '5.0.5',
+126 silly addNameRange     '5.0.6',
+126 silly addNameRange     '5.0.7',
+126 silly addNameRange     '4.4.9',
+126 silly addNameRange     '5.1.0-test.1',
+126 silly addNameRange     '6.0.0-alpha.ede6245',
+126 silly addNameRange     '6.0.0-alpha.9210282',
+126 silly addNameRange     '6.0.0-alpha.2a2f108',
+126 silly addNameRange     '5.1.0',
+126 silly addNameRange     '6.0.0-beta.1',
+126 silly addNameRange     '6.0.0-beta.2',
+126 silly addNameRange     '5.1.1',
+126 silly addNameRange     '6.0.0-beta.3',
+126 silly addNameRange     '6.0.0',
+126 silly addNameRange     '6.0.1',
+126 silly addNameRange     '4.4.10',
+126 silly addNameRange     '7.0.0-beta.0',
+126 silly addNameRange     '7.0.0-beta.1',
+126 silly addNameRange     '7.0.0',
+126 silly addNameRange     '7.0.1',
+126 silly addNameRange     '7.0.2',
+126 silly addNameRange     '7.1.0-alpha.0',
+126 silly addNameRange     '7.1.0-alpha.1',
+126 silly addNameRange     '7.0.3',
+126 silly addNameRange     '7.1.0-alpha.2',
+126 silly addNameRange     '7.1.0-alpha.3',
+126 silly addNameRange     '7.1.0-alpha.4',
+126 silly addNameRange     '7.1.0-alpha.5' ] ]
+127 verbose addNamed [ 'react-redux', '7.0.3' ]
+128 verbose addNamed [ '7.0.3', '7.0.3' ]
+129 silly lockFile def0472d-react-redux-7-0-3 react-redux@7.0.3
+130 verbose lock react-redux@7.0.3 /root/.npm/def0472d-react-redux-7-0-3.lock
+131 silly addNameRange number 2 { name: 'serve', range: '>=11.0.0 <12.0.0', hasData: true }
+132 silly addNameRange versions [ 'serve',
+132 silly addNameRange   [ '0.0.1',
+132 silly addNameRange     '0.0.2',
+132 silly addNameRange     '0.0.3',
+132 silly addNameRange     '0.0.4',
+132 silly addNameRange     '0.0.5',
+132 silly addNameRange     '1.0.0',
+132 silly addNameRange     '1.0.1',
+132 silly addNameRange     '1.0.2',
+132 silly addNameRange     '1.0.3',
+132 silly addNameRange     '1.1.0',
+132 silly addNameRange     '1.2.0',
+132 silly addNameRange     '1.3.0',
+132 silly addNameRange     '1.4.0',
+132 silly addNameRange     '2.0.0',
+132 silly addNameRange     '2.1.0',
+132 silly addNameRange     '2.1.1',
+132 silly addNameRange     '2.1.2',
+132 silly addNameRange     '2.2.0',
+132 silly addNameRange     '2.3.0',
+132 silly addNameRange     '2.4.0',
+132 silly addNameRange     '2.4.1',
+132 silly addNameRange     '2.4.2',
+132 silly addNameRange     '2.4.3',
+132 silly addNameRange     '2.4.4',
+132 silly addNameRange     '3.0.0',
+132 silly addNameRange     '3.0.1',
+132 silly addNameRange     '3.0.2',
+132 silly addNameRange     '3.1.0',
+132 silly addNameRange     '3.2.0',
+132 silly addNameRange     '3.2.1',
+132 silly addNameRange     '3.2.2',
+132 silly addNameRange     '3.2.3',
+132 silly addNameRange     '3.2.4',
+132 silly addNameRange     '3.2.5',
+132 silly addNameRange     '3.2.6',
+132 silly addNameRange     '3.2.7',
+132 silly addNameRange     '3.2.8',
+132 silly addNameRange     '3.2.9',
+132 silly addNameRange     '3.2.10',
+132 silly addNameRange     '3.3.0',
+132 silly addNameRange     '3.3.1',
+132 silly addNameRange     '3.4.0',
+132 silly addNameRange     '3.4.1',
+132 silly addNameRange     '4.0.0',
+132 silly addNameRange     '4.0.1',
+132 silly addNameRange     '4.0.2',
+132 silly addNameRange     '5.0.0',
+132 silly addNameRange     '5.0.1',
+132 silly addNameRange     '5.0.2',
+132 silly addNameRange     '5.0.3',
+132 silly addNameRange     '5.0.4',
+132 silly addNameRange     '5.1.0',
+132 silly addNameRange     '5.1.1',
+132 silly addNameRange     '5.1.2',
+132 silly addNameRange     '5.1.3',
+132 silly addNameRange     '5.1.4',
+132 silly addNameRange     '5.1.5',
+132 silly addNameRange     '5.2.0',
+132 silly addNameRange     '5.2.1',
+132 silly addNameRange     '5.2.2',
+132 silly addNameRange     '5.2.3',
+132 silly addNameRange     '5.2.4',
+132 silly addNameRange     '6.0.0',
+132 silly addNameRange     '6.0.1',
+132 silly addNameRange     '6.0.2',
+132 silly addNameRange     '6.0.3',
+132 silly addNameRange     '6.0.4',
+132 silly addNameRange     '6.0.5',
+132 silly addNameRange     '6.0.6',
+132 silly addNameRange     '6.1.0',
+132 silly addNameRange     '6.2.0',
+132 silly addNameRange     '6.3.0',
+132 silly addNameRange     '6.3.1',
+132 silly addNameRange     '6.4.0',
+132 silly addNameRange     '6.4.1',
+132 silly addNameRange     '6.4.2',
+132 silly addNameRange     '6.4.3',
+132 silly addNameRange     '6.4.4',
+132 silly addNameRange     '6.4.5',
+132 silly addNameRange     '6.4.6',
+132 silly addNameRange     '6.4.7',
+132 silly addNameRange     '6.4.8',
+132 silly addNameRange     '6.4.9',
+132 silly addNameRange     '6.4.10',
+132 silly addNameRange     '6.4.11',
+132 silly addNameRange     '6.5.0',
+132 silly addNameRange     '6.5.1',
+132 silly addNameRange     '6.5.2',
+132 silly addNameRange     '6.5.3',
+132 silly addNameRange     '6.5.4',
+132 silly addNameRange     '6.5.5',
+132 silly addNameRange     '6.5.6',
+132 silly addNameRange     '6.5.7',
+132 silly addNameRange     '6.5.8',
+132 silly addNameRange     '7.0.0',
+132 silly addNameRange     '7.0.1',
+132 silly addNameRange     '7.1.0',
+132 silly addNameRange     '7.1.1',
+132 silly addNameRange     '7.1.2',
+132 silly addNameRange     '7.1.3',
+132 silly addNameRange     ... 28 more items ] ]
+133 verbose addNamed [ 'serve', '11.0.0' ]
+134 verbose addNamed [ '11.0.0', '11.0.0' ]
+135 silly lockFile 679b67c8-serve-11-0-0 serve@11.0.0
+136 verbose lock serve@11.0.0 /root/.npm/679b67c8-serve-11-0-0.lock
+137 silly addNameRange number 2 { name: 'babel-plugin-styled-components',
+137 silly addNameRange   range: '>=1.10.0 <2.0.0',
+137 silly addNameRange   hasData: true }
+138 silly addNameRange versions [ 'babel-plugin-styled-components',
+138 silly addNameRange   [ '0.0.2',
+138 silly addNameRange     '0.0.3-0',
+138 silly addNameRange     '0.0.3-1',
+138 silly addNameRange     '1.0.0',
+138 silly addNameRange     '1.0.1',
+138 silly addNameRange     '1.1.0',
+138 silly addNameRange     '1.1.1',
+138 silly addNameRange     '1.1.2',
+138 silly addNameRange     '1.1.3',
+138 silly addNameRange     '1.1.4',
+138 silly addNameRange     '1.1.5',
+138 silly addNameRange     '1.1.6',
+138 silly addNameRange     '1.1.7',
+138 silly addNameRange     '1.2.0',
+138 silly addNameRange     '1.2.1',
+138 silly addNameRange     '1.3.0',
+138 silly addNameRange     '1.4.0',
+138 silly addNameRange     '1.5.0',
+138 silly addNameRange     '1.5.1',
+138 silly addNameRange     '1.6.0',
+138 silly addNameRange     '1.6.1',
+138 silly addNameRange     '1.6.2-0',
+138 silly addNameRange     '1.6.2',
+138 silly addNameRange     '1.6.3',
+138 silly addNameRange     '1.6.4',
+138 silly addNameRange     '1.7.0-0',
+138 silly addNameRange     '1.7.0',
+138 silly addNameRange     '1.7.1',
+138 silly addNameRange     '1.8.0-0',
+138 silly addNameRange     '1.8.0-1',
+138 silly addNameRange     '1.8.0',
+138 silly addNameRange     '1.7.2',
+138 silly addNameRange     '1.9.0-0',
+138 silly addNameRange     '1.9.0-1',
+138 silly addNameRange     '1.9.0',
+138 silly addNameRange     '1.9.1-0',
+138 silly addNameRange     '1.9.1',
+138 silly addNameRange     '1.9.2',
+138 silly addNameRange     '1.9.3-0',
+138 silly addNameRange     '1.9.3',
+138 silly addNameRange     '1.9.4-0',
+138 silly addNameRange     '1.9.4',
+138 silly addNameRange     '1.9.5-0',
+138 silly addNameRange     '1.10.0',
+138 silly addNameRange     '1.10.1-0' ] ]
+139 verbose addNamed [ 'babel-plugin-styled-components', '1.10.0' ]
+140 verbose addNamed [ '1.10.0', '1.10.0' ]
+141 silly lockFile 5e3d0376--plugin-styled-components-1-10-0 babel-plugin-styled-components@1.10.0
+142 verbose lock babel-plugin-styled-components@1.10.0 /root/.npm/5e3d0376--plugin-styled-components-1-10-0.lock
+143 silly addNameRange number 2 { name: 'styled-components',
+143 silly addNameRange   range: '>=4.1.3 <5.0.0',
+143 silly addNameRange   hasData: true }
+144 silly addNameRange versions [ 'styled-components',
+144 silly addNameRange   [ '0.0.1',
+144 silly addNameRange     '0.0.2',
+144 silly addNameRange     '0.0.3',
+144 silly addNameRange     '0.0.4',
+144 silly addNameRange     '0.0.5-0',
+144 silly addNameRange     '0.0.5-1',
+144 silly addNameRange     '0.0.5-2',
+144 silly addNameRange     '0.0.5',
+144 silly addNameRange     '0.0.6',
+144 silly addNameRange     '0.1.0',
+144 silly addNameRange     '0.1.1',
+144 silly addNameRange     '0.1.2',
+144 silly addNameRange     '0.1.3',
+144 silly addNameRange     '0.1.4',
+144 silly addNameRange     '0.1.5',
+144 silly addNameRange     '0.1.6',
+144 silly addNameRange     '0.1.7',
+144 silly addNameRange     '0.1.8',
+144 silly addNameRange     '0.1.9',
+144 silly addNameRange     '0.2.0',
+144 silly addNameRange     '0.2.1',
+144 silly addNameRange     '0.2.2',
+144 silly addNameRange     '0.2.3',
+144 silly addNameRange     '0.2.4',
+144 silly addNameRange     '0.2.5',
+144 silly addNameRange     '0.3.0',
+144 silly addNameRange     '0.3.1',
+144 silly addNameRange     '0.3.2',
+144 silly addNameRange     '0.3.3',
+144 silly addNameRange     '0.3.4',
+144 silly addNameRange     '0.4.0',
+144 silly addNameRange     '0.4.1',
+144 silly addNameRange     '0.4.2',
+144 silly addNameRange     '1.0.0',
+144 silly addNameRange     '1.0.2',
+144 silly addNameRange     '1.0.3',
+144 silly addNameRange     '1.0.4',
+144 silly addNameRange     '1.0.5',
+144 silly addNameRange     '1.0.6',
+144 silly addNameRange     '1.0.7',
+144 silly addNameRange     '1.0.8',
+144 silly addNameRange     '1.0.9',
+144 silly addNameRange     '1.0.10',
+144 silly addNameRange     '1.0.11',
+144 silly addNameRange     '1.0.12-0',
+144 silly addNameRange     '1.1.0',
+144 silly addNameRange     '1.1.1',
+144 silly addNameRange     '1.1.2-0',
+144 silly addNameRange     '1.1.2',
+144 silly addNameRange     '1.1.3',
+144 silly addNameRange     '1.2.0',
+144 silly addNameRange     '1.2.1',
+144 silly addNameRange     '1.3.0',
+144 silly addNameRange     '1.3.1',
+144 silly addNameRange     '2.0.0-0',
+144 silly addNameRange     '1.4.0',
+144 silly addNameRange     '1.4.1',
+144 silly addNameRange     '1.4.2',
+144 silly addNameRange     '2.0.0-1',
+144 silly addNameRange     '1.4.3',
+144 silly addNameRange     '2.0.0-2',
+144 silly addNameRange     '2.0.0-3',
+144 silly addNameRange     '2.0.0-4',
+144 silly addNameRange     '2.0.0-5',
+144 silly addNameRange     '1.4.4',
+144 silly addNameRange     '2.0.0-6',
+144 silly addNameRange     '2.0.0-7',
+144 silly addNameRange     '2.0.0-8',
+144 silly addNameRange     '2.0.0-9',
+144 silly addNameRange     '2.0.0-10',
+144 silly addNameRange     '2.0.0-11',
+144 silly addNameRange     '2.0.0-12',
+144 silly addNameRange     '2.0.0-13',
+144 silly addNameRange     '2.0.0-14',
+144 silly addNameRange     '2.0.0-15',
+144 silly addNameRange     '1.4.5',
+144 silly addNameRange     '2.0.0-16',
+144 silly addNameRange     '2.0.0-17',
+144 silly addNameRange     '1.4.6',
+144 silly addNameRange     '2.0.0-18',
+144 silly addNameRange     '2.0.0-19',
+144 silly addNameRange     '2.0.0',
+144 silly addNameRange     '2.0.1',
+144 silly addNameRange     '2.1.0',
+144 silly addNameRange     '2.1.1-0',
+144 silly addNameRange     '2.1.1',
+144 silly addNameRange     '2.1.1-1',
+144 silly addNameRange     '2.1.2',
+144 silly addNameRange     '2.1.3-0',
+144 silly addNameRange     '2.2.0',
+144 silly addNameRange     '2.2.1',
+144 silly addNameRange     '2.2.2',
+144 silly addNameRange     '2.2.3',
+144 silly addNameRange     '2.2.4',
+144 silly addNameRange     '2.3.0',
+144 silly addNameRange     '2.3.1',
+144 silly addNameRange     '2.3.2',
+144 silly addNameRange     '2.3.3-0',
+144 silly addNameRange     '2.3.3',
+144 silly addNameRange     '2.4.0-0',
+144 silly addNameRange     ... 118 more items ] ]
+145 verbose addNamed [ 'styled-components', '4.2.0' ]
+146 verbose addNamed [ '4.2.0', '4.2.0' ]
+147 silly lockFile 13a4fd5f-styled-components-4-2-0 styled-components@4.2.0
+148 verbose lock styled-components@4.2.0 /root/.npm/13a4fd5f-styled-components-4-2-0.lock
+149 silly lockFile 761f2955-react-scripts-2-1-5 react-scripts@2.1.5
+150 silly lockFile 761f2955-react-scripts-2-1-5 react-scripts@2.1.5
+151 silly lockFile def0472d-react-redux-7-0-3 react-redux@7.0.3
+152 silly lockFile def0472d-react-redux-7-0-3 react-redux@7.0.3
+153 silly lockFile 5e3d0376--plugin-styled-components-1-10-0 babel-plugin-styled-components@1.10.0
+154 silly lockFile 5e3d0376--plugin-styled-components-1-10-0 babel-plugin-styled-components@1.10.0
+155 silly lockFile 679b67c8-serve-11-0-0 serve@11.0.0
+156 silly lockFile 679b67c8-serve-11-0-0 serve@11.0.0
+157 silly lockFile aaad5184-react-redux-7-0-3 react-redux@^7.0.3
+158 silly lockFile aaad5184-react-redux-7-0-3 react-redux@^7.0.3
+159 silly lockFile 0b33995e--plugin-styled-components-1-10-0 babel-plugin-styled-components@^1.10.0
+160 silly lockFile 0b33995e--plugin-styled-components-1-10-0 babel-plugin-styled-components@^1.10.0
+161 silly lockFile cf602afb-serve-11-0-0 serve@^11.0.0
+162 silly lockFile cf602afb-serve-11-0-0 serve@^11.0.0
+163 silly lockFile 13a4fd5f-styled-components-4-2-0 styled-components@4.2.0
+164 silly lockFile 13a4fd5f-styled-components-4-2-0 styled-components@4.2.0
+165 silly lockFile fb622280-styled-components-4-1-3 styled-components@^4.1.3
+166 silly lockFile fb622280-styled-components-4-1-3 styled-components@^4.1.3
+167 silly resolved [ { name: 'react-scripts',
+167 silly resolved     version: '2.1.5',
+167 silly resolved     description: 'Configuration and scripts for Create React App.',
+167 silly resolved     repository:
+167 silly resolved      { type: 'git',
+167 silly resolved        url: 'git+https://github.com/facebook/create-react-app.git' },
+167 silly resolved     license: 'MIT',
+167 silly resolved     engines: { node: '>=6' },
+167 silly resolved     bugs: { url: 'https://github.com/facebook/create-react-app/issues' },
+167 silly resolved     bin: { 'react-scripts': './bin/react-scripts.js' },
+167 silly resolved     types: './lib/react-app.d.ts',
+167 silly resolved     dependencies:
+167 silly resolved      { '@babel/core': '7.2.2',
+167 silly resolved        '@svgr/webpack': '4.1.0',
+167 silly resolved        'babel-core': '7.0.0-bridge.0',
+167 silly resolved        'babel-eslint': '9.0.0',
+167 silly resolved        'babel-jest': '23.6.0',
+167 silly resolved        'babel-loader': '8.0.5',
+167 silly resolved        'babel-plugin-named-asset-import': '^0.3.1',
+167 silly resolved        'babel-preset-react-app': '^7.0.1',
+167 silly resolved        bfj: '6.1.1',
+167 silly resolved        'case-sensitive-paths-webpack-plugin': '2.2.0',
+167 silly resolved        'css-loader': '1.0.0',
+167 silly resolved        dotenv: '6.0.0',
+167 silly resolved        'dotenv-expand': '4.2.0',
+167 silly resolved        eslint: '5.12.0',
+167 silly resolved        'eslint-config-react-app': '^3.0.7',
+167 silly resolved        'eslint-loader': '2.1.1',
+167 silly resolved        'eslint-plugin-flowtype': '2.50.1',
+167 silly resolved        'eslint-plugin-import': '2.14.0',
+167 silly resolved        'eslint-plugin-jsx-a11y': '6.1.2',
+167 silly resolved        'eslint-plugin-react': '7.12.4',
+167 silly resolved        'file-loader': '2.0.0',
+167 silly resolved        'fork-ts-checker-webpack-plugin-alt': '0.4.14',
+167 silly resolved        'fs-extra': '7.0.1',
+167 silly resolved        'html-webpack-plugin': '4.0.0-alpha.2',
+167 silly resolved        'identity-obj-proxy': '3.0.0',
+167 silly resolved        jest: '23.6.0',
+167 silly resolved        'jest-pnp-resolver': '1.0.2',
+167 silly resolved        'jest-resolve': '23.6.0',
+167 silly resolved        'jest-watch-typeahead': '^0.2.1',
+167 silly resolved        'mini-css-extract-plugin': '0.5.0',
+167 silly resolved        'optimize-css-assets-webpack-plugin': '5.0.1',
+167 silly resolved        'pnp-webpack-plugin': '1.2.1',
+167 silly resolved        'postcss-flexbugs-fixes': '4.1.0',
+167 silly resolved        'postcss-loader': '3.0.0',
+167 silly resolved        'postcss-preset-env': '6.5.0',
+167 silly resolved        'postcss-safe-parser': '4.0.1',
+167 silly resolved        'react-app-polyfill': '^0.2.1',
+167 silly resolved        'react-dev-utils': '^7.0.3',
+167 silly resolved        resolve: '1.10.0',
+167 silly resolved        'sass-loader': '7.1.0',
+167 silly resolved        'style-loader': '0.23.1',
+167 silly resolved        'terser-webpack-plugin': '1.2.2',
+167 silly resolved        'url-loader': '1.1.2',
+167 silly resolved        webpack: '4.28.3',
+167 silly resolved        'webpack-dev-server': '3.1.14',
+167 silly resolved        'webpack-manifest-plugin': '2.0.4',
+167 silly resolved        'workbox-webpack-plugin': '3.6.3',
+167 silly resolved        fsevents: '1.2.4' },
+167 silly resolved     devDependencies: { react: '^16.3.2', 'react-dom': '^16.3.2' },
+167 silly resolved     optionalDependencies: { fsevents: '1.2.4' },
+167 silly resolved     browserslist: [ '>0.2%', 'not dead', 'not ie <= 11', 'not op_mini all' ],
+167 silly resolved     homepage: 'https://github.com/facebook/create-react-app#readme',
+167 silly resolved     _id: 'react-scripts@2.1.5',
+167 silly resolved     _npmVersion: '6.4.1',
+167 silly resolved     _nodeVersion: '10.15.1',
+167 silly resolved     _npmUser: { name: 'ianschmitz', email: 'ianschmitz@gmail.com' },
+167 silly resolved     dist:
+167 silly resolved      { integrity: 'sha512-NaDKSxBLlU/jmO3TjTChz0PnnGToaQn0R/y4l4/Uk1vZdrIUsKCGdOWV1z0SJoRg7bFgNKxh55yS0qMr8rFwCg==',
+167 silly resolved        shasum: '0740507db0a06d518c231caa1ef4e908bd8ebce5',
+167 silly resolved        tarball: 'https://registry.npmjs.org/react-scripts/-/react-scripts-2.1.5.tgz',
+167 silly resolved        fileCount: 44,
+167 silly resolved        unpackedSize: 141964,
+167 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcYaSyCRA9TVsSAnZWagAAOfYQAJVoedRajCZ2z/2GGLqC\nJpGYQmnOXHB9PlFKfciMolk7c3fGdLpV4Elsprbjos9Fwd1c+1zVT7TTeA24\n9f567R55RRDj1e1ijU8KNKA9EGV4698bzGthxNNTQiw6UgxNNDCqmClqGXhm\n8V0CycDzOixQs7iNGY7d/et3fb6D6Q+rBdG4uaJngEYz9WE4MWclAA+MAFC/\nz3i2CTFcmMBJcdoC43UJL96D8U5Ii0ggOtdAFdLVrHAFk9ePsQiH3lJQp2MV\nAF5nJt5dVrtJKZH0Yh4tAi4MoQgncyMN3BGxSjaWsMLFXt4nG1DIRw5eQUHP\nVHNMkI6F1wPIqtJ4uLwPWYtv2RVwKuWw7ICEJhEMFC9htgYSnwmjOpILMZhr\nGJ8c2Tbf/DZmebkSO8ntdcAbn2BIR9CkVg2r5N3V2uScqY84LfEx0lYU/Tul\n6xegmGL9sDJKO/z8dgcCgfWPDEi5NkQjUcGJi3jEY02CJO4lqOJG0l3jz8Og\n2SqHS6i3e5TPtjmioMw3cIx/iLrZOEX1+13Ya6TUu7oW0862c8V1g5vEjsq3\nrMC8J2Ay+FDWhRje6dbk2uqdK3kfJI7KPLmHLAty4nOIYsVm6o8N3HVISand\nTAMt+KIhPMLUOLu7SiMep0RU2NOZdMmh/NAY1RvNs2jZDBdTvvVhHqvXOT+G\n/nN9\r\n=eWLt\r\n-----END PGP SIGNATURE-----\r\n' },
+167 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+167 silly resolved     directories: {},
+167 silly resolved     _npmOperationalInternal:
+167 silly resolved      { host: 's3://npm-registry-packages',
+167 silly resolved        tmp: 'tmp/react-scripts_2.1.5_1549903026074_0.13547600033680784' },
+167 silly resolved     _hasShrinkwrap: false,
+167 silly resolved     _shasum: '0740507db0a06d518c231caa1ef4e908bd8ebce5',
+167 silly resolved     _from: 'react-scripts@2.1.5',
+167 silly resolved     _resolved: 'https://registry.npmjs.org/react-scripts/-/react-scripts-2.1.5.tgz',
+167 silly resolved     readme: 'ERROR: No README data found!' },
+167 silly resolved   { version: '1.10.0',
+167 silly resolved     name: 'babel-plugin-styled-components',
+167 silly resolved     description: 'Improve the debugging experience and add server-side rendering support to styled-components',
+167 silly resolved     repository:
+167 silly resolved      { type: 'git',
+167 silly resolved        url: 'git+https://github.com/styled-components/babel-plugin-styled-components.git' },
+167 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+167 silly resolved     main: 'lib/index.js',
+167 silly resolved     license: 'MIT',
+167 silly resolved     devDependencies:
+167 silly resolved      { '@babel/cli': '^7.0.0',
+167 silly resolved        '@babel/core': '^7.0.0',
+167 silly resolved        '@babel/plugin-proposal-class-properties': '^7.0.0',
+167 silly resolved        '@babel/preset-env': '^7.0.0',
+167 silly resolved        'babel-core': '7.0.0-bridge.0',
+167 silly resolved        'babel-plugin-transform-es2015-modules-commonjs': '^6.26.2',
+167 silly resolved        jest: '^23.6.0',
+167 silly resolved        prettier: '^1.14.2',
+167 silly resolved        rimraf: '^2.6.2',
+167 silly resolved        'styled-components': '^4.0.0' },
+167 silly resolved     dependencies:
+167 silly resolved      { '@babel/helper-annotate-as-pure': '^7.0.0',
+167 silly resolved        '@babel/helper-module-imports': '^7.0.0',
+167 silly resolved        'babel-plugin-syntax-jsx': '^6.18.0',
+167 silly resolved        lodash: '^4.17.10' },
+167 silly resolved     resolutions: { 'babel-core': '7.0.0-bridge.0' },
+167 silly resolved     peerDependencies: { 'styled-components': '>= 2' },
+167 silly resolved     scripts:
+167 silly resolved      { clean: 'rimraf lib',
+167 silly resolved        style: 'prettier --write src/**/*.js',
+167 silly resolved        build: 'babel src -d lib',
+167 silly resolved        test: 'jest',
+167 silly resolved        'test:watch': 'npm run test -- --watch',
+167 silly resolved        prepublish: 'npm run clean && npm run build' },
+167 silly resolved     keywords:
+167 silly resolved      [ 'styled-components',
+167 silly resolved        'css-in-js',
+167 silly resolved        'babel-plugin',
+167 silly resolved        'server-side rendering',
+167 silly resolved        'ssr',
+167 silly resolved        'displayName' ],
+167 silly resolved     jest: { snapshotSerializers: [Array] },
+167 silly resolved     gitHead: '28ce9faf08bcd65de553b38ea124dc0879536f43',
+167 silly resolved     bugs:
+167 silly resolved      { url: 'https://github.com/styled-components/babel-plugin-styled-components/issues' },
+167 silly resolved     homepage: 'https://github.com/styled-components/babel-plugin-styled-components#readme',
+167 silly resolved     _id: 'babel-plugin-styled-components@1.10.0',
+167 silly resolved     _npmVersion: '6.4.1',
+167 silly resolved     _nodeVersion: '10.14.0',
+167 silly resolved     _npmUser: { name: 'mxstbr', email: 'npm@mxstbr.com' },
+167 silly resolved     dist:
+167 silly resolved      { integrity: 'sha512-sQVKG8irFXx14ZfaK1bBePirfkacl3j8nZwSZK+ZjsbnadRHKQTbhXbe/RB1vT6Vgkz45E+V95LBq4KqdhZUNw==',
+167 silly resolved        shasum: 'ff1f42ad2cc78c21f26b62266b8f564dbc862939',
+167 silly resolved        tarball: 'https://registry.npmjs.org/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.0.tgz',
+167 silly resolved        fileCount: 18,
+167 silly resolved        unpackedSize: 36364,
+167 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcF20ECRA9TVsSAnZWagAAPRgP/iaVc74rbmJ1WlOGOQ1n\nQk3W+Mc3Sq+N0G+UnlCZtCyMdOi6/w0+lL2a/dwAt5VWZfTsLA3irWf0UgCk\n0xngPf1txsaB0CxF1LopE45pw/xNcuGk64cd4urke0NaWzX7qacMxlHWqORT\nd5zeBRYexW8WfxP3gL4Xbe/nEBYsm2+aw0cpfE8FqvZu1/ZO5301icX0kDs1\n1eLS8PojG2zfW74OZVq7rUkvW/pj8MbBMzNucBqa5lFdzWNPpOGjw6khhPjM\nDXZZ20cFJuo4pI9dRuVa4d4fcjMosBrF7G46ZGfX8wee9FuqHDXA6p0klAVY\n50p6ACnXDFANQFSp/kgYiOfpm1DPUKa3C/gR97poBhIejs3ExAHyy0A11M5X\nd5I8/MwhqIBhEYLG/ceMxrn/vCIayisTHyDHFxClmJwPxJYkyn88UAnBk+gF\nAEDht9Enc3YIw5VoWg7/hCJN+r1waTMowhkaw0KM+klGYgxIz2oNcHrq7N5U\nlgvlAbHlhJxXMgLqV4QbHIIR7MKY8rNEb6Z0ZSQpCHQf1y6Z6yKSq1gHQJpf\nxVtRFRhleb2ZnXrAlsQMd76gakhWKhCUp5viNnuZoaiCEoYVwIr+/ZIAsq61\niGTLYt3XzWXDOSUKE2HbitilpQwEZ7Af9y1RCVnx26/3v/PGGlivYb/Yzubv\nfaC1\r\n=yPa6\r\n-----END PGP SIGNATURE-----\r\n' },
+167 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+167 silly resolved     directories: {},
+167 silly resolved     _npmOperationalInternal:
+167 silly resolved      { host: 's3://npm-registry-packages',
+167 silly resolved        tmp: 'tmp/babel-plugin-styled-components_1.10.0_1545039107938_0.08044918272572832' },
+167 silly resolved     _hasShrinkwrap: false,
+167 silly resolved     _shasum: 'ff1f42ad2cc78c21f26b62266b8f564dbc862939',
+167 silly resolved     _from: 'babel-plugin-styled-components@^1.10.0',
+167 silly resolved     _resolved: 'https://registry.npmjs.org/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.0.tgz',
+167 silly resolved     readme: 'ERROR: No README data found!' },
+167 silly resolved   { name: 'react-redux',
+167 silly resolved     version: '7.0.3',
+167 silly resolved     description: 'Official React bindings for Redux',
+167 silly resolved     keywords: [ 'react', 'reactjs', 'redux' ],
+167 silly resolved     license: 'MIT',
+167 silly resolved     author:
+167 silly resolved      { name: 'Dan Abramov',
+167 silly resolved        email: 'dan.abramov@me.com',
+167 silly resolved        url: 'https://github.com/gaearon' },
+167 silly resolved     homepage: 'https://github.com/reduxjs/react-redux',
+167 silly resolved     repository:
+167 silly resolved      { type: 'git',
+167 silly resolved        url: 'git+https://github.com/reduxjs/react-redux.git' },
+167 silly resolved     bugs: { url: 'https://github.com/reduxjs/react-redux/issues' },
+167 silly resolved     main: './lib/index.js',
+167 silly resolved     unpkg: 'dist/react-redux.js',
+167 silly resolved     module: 'es/index.js',
+167 silly resolved     scripts:
+167 silly resolved      { 'build:commonjs': 'cross-env BABEL_ENV=commonjs babel src --out-dir lib',
+167 silly resolved        'build:es': 'babel src --out-dir es',
+167 silly resolved        'build:umd': 'cross-env NODE_ENV=development rollup -c -o dist/react-redux.js',
+167 silly resolved        'build:umd:min': 'cross-env NODE_ENV=production rollup -c -o dist/react-redux.min.js',
+167 silly resolved        build: 'npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min',
+167 silly resolved        clean: 'rimraf lib dist es coverage',
+167 silly resolved        format: 'prettier --write "{src,test}/**/*.{js,ts}" index.d.ts "docs/**/*.md"',
+167 silly resolved        lint: 'eslint src test/utils test/components',
+167 silly resolved        prepare: 'npm run clean && npm run build',
+167 silly resolved        pretest: 'npm run lint',
+167 silly resolved        test: 'jest',
+167 silly resolved        coverage: 'codecov' },
+167 silly resolved     peerDependencies: { react: '^16.8.3', redux: '^2.0.0 || ^3.0.0 || ^4.0.0-0' },
+167 silly resolved     dependencies:
+167 silly resolved      { '@babel/runtime': '^7.4.3',
+167 silly resolved        'hoist-non-react-statics': '^3.3.0',
+167 silly resolved        invariant: '^2.2.4',
+167 silly resolved        'loose-envify': '^1.4.0',
+167 silly resolved        'prop-types': '^15.7.2',
+167 silly resolved        'react-is': '^16.8.6' },
+167 silly resolved     devDependencies:
+167 silly resolved      { '@babel/cli': '^7.4.3',
+167 silly resolved        '@babel/core': '^7.4.3',
+167 silly resolved        '@babel/plugin-proposal-decorators': '^7.4.0',
+167 silly resolved        '@babel/plugin-proposal-object-rest-spread': '^7.4.3',
+167 silly resolved        '@babel/plugin-transform-react-display-name': '^7.2.0',
+167 silly resolved        '@babel/plugin-transform-react-jsx': '^7.3.0',
+167 silly resolved        '@babel/plugin-transform-runtime': '^7.4.3',
+167 silly resolved        '@babel/preset-env': '^7.4.3',
+167 silly resolved        'babel-core': '^7.0.0-bridge.0',
+167 silly resolved        'babel-eslint': '^10.0.1',
+167 silly resolved        'babel-jest': '^24.7.1',
+167 silly resolved        codecov: '^3.3.0',
+167 silly resolved        'create-react-class': '^15.6.3',
+167 silly resolved        'cross-env': '^5.2.0',
+167 silly resolved        es3ify: '^0.2.0',
+167 silly resolved        eslint: '^5.16.0',
+167 silly resolved        'eslint-config-prettier': '^4.1.0',
+167 silly resolved        'eslint-plugin-import': '^2.16.0',
+167 silly resolved        'eslint-plugin-prettier': '^3.0.1',
+167 silly resolved        'eslint-plugin-react': '^7.12.4',
+167 silly resolved        glob: '^7.1.3',
+167 silly resolved        jest: '^24.7.1',
+167 silly resolved        'jest-dom': '^3.1.3',
+167 silly resolved        prettier: '^1.16.4',
+167 silly resolved        react: '^16.8.6',
+167 silly resolved        'react-dom': '^16.8.6',
+167 silly resolved        'react-testing-library': '^5.9.0',
+167 silly resolved        redux: '^4.0.1',
+167 silly resolved        rimraf: '^2.6.3',
+167 silly resolved        rollup: '^1.8.0',
+167 silly resolved        'rollup-plugin-babel': '^4.3.2',
+167 silly resolved        'rollup-plugin-commonjs': '^9.3.3',
+167 silly resolved        'rollup-plugin-node-resolve': '^4.0.1',
+167 silly resolved        'rollup-plugin-replace': '^2.1.1',
+167 silly resolved        'rollup-plugin-terser': '^4.0.4' },
+167 silly resolved     browserify: { transform: [Array] },
+167 silly resolved     jest:
+167 silly resolved      { coverageDirectory: './coverage/',
+167 silly resolved        collectCoverage: true,
+167 silly resolved        testURL: 'http://localhost' },
+167 silly resolved     gitHead: 'dbfcc97720cc962c8468f48d06a280d1dbf4d832',
+167 silly resolved     _id: 'react-redux@7.0.3',
+167 silly resolved     _nodeVersion: '10.12.0',
+167 silly resolved     _npmVersion: '6.9.0',
+167 silly resolved     dist:
+167 silly resolved      { integrity: 'sha512-vYZA7ftOYlDk3NetitsI7fLjryt/widNl1SLXYvFenIpm7vjb4ryK0EeFrgn62usg5fYkyIAWNUPKnwWPevKLg==',
+167 silly resolved        shasum: '983c5a6de81cb1e696bd1c090ba826545f9170f1',
+167 silly resolved        tarball: 'https://registry.npmjs.org/react-redux/-/react-redux-7.0.3.tgz',
+167 silly resolved        fileCount: 69,
+167 silly resolved        unpackedSize: 238087,
+167 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcxdbSCRA9TVsSAnZWagAAnFwP/jmoYueXj78hcH2QpGbC\ni4NBXfpxKfXwHMUhrL60RqZf+XbisxTurneN1g/Rgzq4XKgP6CiVlLMGW28h\n1VeJeoSodCKRabTohDcCHRCSJxbdcFDAnddAPBzhmjc6yfcQ4ot4NDPlgMvH\nAnaxT+IklfaEQRIV6aLvb7bi7BaOn4jr9qXvc9fcyiHw+pRXIsl5fPaD7x0x\nW814WTlVPwlcQK2I4bY9ilKqROivPaloopeG2zE6975dLBrwvzg249JTv1qF\nAewkljAubKy/53G/0C05srlJyUztN6ORuS5Jg2WlF/nSzLU/agBloCffs3oa\n6AaLenBvtl6FhQsSLGrTTDhknvgE+ZHKoW1ikIQWmfIDuVd4XLuxW3hbDkex\nGCNK4OQqAd30rSdHENpBCseFFEphUZzZ018SnmURPHYJDN0rwvJ91c8SqydU\n6Akboswu3ymRCHbAeMBCmOXHaYb3b7JziKfYrGQFHSwtQO4/SzloUSFtqc6Z\ntPlx5lt/m0sJdHYgukvGMdR7K2ce61H+VHsH7TKRLI3iTsolvEop/Eh3eklb\nvkzheTyOalQbAi6TADQaJHtdKFPV1ZE0BGUrOJ0uALtikZDLYAwcUiwfQqkE\nqLZiUVPETzFQ3atw3yovg1YxHSgne7+ayg4kA2QdTrW/ZGPX1mYaATaapEa7\nEPwD\r\n=/wAE\r\n-----END PGP SIGNATURE-----\r\n' },
+167 silly resolved     maintainers: [ [Object], [Object] ],
+167 silly resolved     _npmUser: { name: 'acemarke', email: 'mark.erikson@gmail.com' },
+167 silly resolved     directories: {},
+167 silly resolved     _npmOperationalInternal:
+167 silly resolved      { host: 's3://npm-registry-packages',
+167 silly resolved        tmp: 'tmp/react-redux_7.0.3_1556469457627_0.5819854462120713' },
+167 silly resolved     _hasShrinkwrap: false,
+167 silly resolved     _shasum: '983c5a6de81cb1e696bd1c090ba826545f9170f1',
+167 silly resolved     _from: 'react-redux@^7.0.3',
+167 silly resolved     _resolved: 'https://registry.npmjs.org/react-redux/-/react-redux-7.0.3.tgz',
+167 silly resolved     readme: 'ERROR: No README data found!' },
+167 silly resolved   { name: 'serve',
+167 silly resolved     version: '11.0.0',
+167 silly resolved     description: 'Static file serving and directory listing',
+167 silly resolved     scripts:
+167 silly resolved      { test: 'yarn lint',
+167 silly resolved        lint: 'zeit-eslint --ext .jsx,.js .',
+167 silly resolved        'lint-staged': 'git diff --diff-filter=ACMRT --cached --name-only \'*.js\' \'*.jsx\' | xargs zeit-eslint' },
+167 silly resolved     repository: { type: 'git', url: 'git+https://github.com/zeit/serve.git' },
+167 silly resolved     bin: { serve: './bin/serve.js' },
+167 silly resolved     keywords: [ 'now', 'serve', 'micro', 'http-server' ],
+167 silly resolved     author: { name: 'leo' },
+167 silly resolved     license: 'MIT',
+167 silly resolved     devDependencies:
+167 silly resolved      { '@zeit/eslint-config-node': '0.3.0',
+167 silly resolved        '@zeit/git-hooks': '0.1.4',
+167 silly resolved        eslint: '5.4.0' },
+167 silly resolved     eslintConfig: { extends: [Array] },
+167 silly resolved     git: { 'pre-commit': 'lint-staged' },
+167 silly resolved     dependencies:
+167 silly resolved      { '@zeit/schemas': '2.6.0',
+167 silly resolved        ajv: '6.5.3',
+167 silly resolved        arg: '2.0.0',
+167 silly resolved        boxen: '1.3.0',
+167 silly resolved        chalk: '2.4.1',
+167 silly resolved        clipboardy: '1.2.3',
+167 silly resolved        compression: '1.7.3',
+167 silly resolved        'serve-handler': '6.0.0',
+167 silly resolved        'update-check': '1.5.2' },
+167 silly resolved     gitHead: '67f6f613e4b525d9cb7b1a80461895863026d3e6',
+167 silly resolved     bugs: { url: 'https://github.com/zeit/serve/issues' },
+167 silly resolved     homepage: 'https://github.com/zeit/serve#readme',
+167 silly resolved     _id: 'serve@11.0.0',
+167 silly resolved     _nodeVersion: '11.12.0',
+167 silly resolved     _npmVersion: '6.7.0',
+167 silly resolved     dist:
+167 silly resolved      { integrity: 'sha512-Gnyyp3JAtRUo0dRH1/YWPKbnaXHfzQBiVh9+qSUi6tyVcVA8twUP2c+GnOwsoe9Ss7dfOHJUTSA4fdWP//Y4gQ==',
+167 silly resolved        shasum: '577f4e0f4b57058d12e3be19373f1a3d6d8826dc',
+167 silly resolved        tarball: 'https://registry.npmjs.org/serve/-/serve-11.0.0.tgz',
+167 silly resolved        fileCount: 4,
+167 silly resolved        unpackedSize: 15998,
+167 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcpIZmCRA9TVsSAnZWagAAPzYP/1tlM2BRbcDT5MfM9dpi\nACQtgDGUtxy/y8pXWZscmq/xpIMTCyHz9wjCiUOzdyeolgFNezmPFpif809U\nH5bsJJt74Mo4emhKBzLvORN1oEAjUREfe1CoWEuRpb/RQEyYJOeI3nlKtTwU\nfu54I1/JHgkFg9kq24DrECzM7Vl9ofKUltUZcVIsr9w9lnYS64n4Iub13wsv\n0AdRFNfHocMPvzDA21+jv8FDdYaPTFKTFR72hirRrCkAJ2VOpoCPevYWtack\n9Zu1eSBLy6DDgZSKWfLRymB50s3NRNrjm2xeLZm7Uu33QEptZG7+LNyewLRj\ndGYsb7AL8ZObJASD1nKWWpbSXXtl6Sy9IjFdXTBvcIdxBgwCmN+ppkgqtQ49\ndgYQBRrCMw99C2TLZX27kA6FduZwfMyNiztyb74FJElZntfvLCl2TAFF5zbu\nPs0T6HAqjd92QoywUv6yyTM6uR7k3axF6GYUS1q4vMZGTWf7Aa9Zg0vWqjfu\nWLnfWqt5MSbqxbSYav7CuZD9jVtSTCMTbpASs5OrM6O5oHba3VPqW7pVyico\nMT+5VyhxrFxzV8u0uDZj2g3GoE6h2R2/Lun1SMK2cxkFOQYxwYVVMUwGufWy\nVry5Bhf98fkH073hdyoXpwGennZO84Y5F2Mg5a79LKuEX+Es+zgLgDVztmS/\n7yC3\r\n=RkUA\r\n-----END PGP SIGNATURE-----\r\n' },
+167 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+167 silly resolved     _npmUser: { name: 'leo', email: 'leo@zeit.co' },
+167 silly resolved     directories: {},
+167 silly resolved     _npmOperationalInternal:
+167 silly resolved      { host: 's3://npm-registry-packages',
+167 silly resolved        tmp: 'tmp/serve_11.0.0_1554286182323_0.45439346166686256' },
+167 silly resolved     _hasShrinkwrap: false,
+167 silly resolved     _shasum: '577f4e0f4b57058d12e3be19373f1a3d6d8826dc',
+167 silly resolved     _from: 'serve@^11.0.0',
+167 silly resolved     _resolved: 'https://registry.npmjs.org/serve/-/serve-11.0.0.tgz',
+167 silly resolved     readme: 'ERROR: No README data found!' },
+167 silly resolved   { name: 'styled-components',
+167 silly resolved     version: '4.2.0',
+167 silly resolved     description: 'Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress',
+167 silly resolved     main: 'dist/styled-components.cjs.js',
+167 silly resolved     'jsnext:main': 'dist/styled-components.esm.js',
+167 silly resolved     module: 'dist/styled-components.esm.js',
+167 silly resolved     'react-native': 'native/dist/styled-components.native.cjs.js',
+167 silly resolved     browser:
+167 silly resolved      { './dist/styled-components.esm.js': './dist/styled-components.browser.esm.js',
+167 silly resolved        './dist/styled-components.cjs.js': './dist/styled-components.browser.cjs.js' },
+167 silly resolved     sideEffects: false,
+167 silly resolved     scripts:
+167 silly resolved      { build: 'rollup -c',
+167 silly resolved        prebuild: 'rimraf dist',
+167 silly resolved        size: 'bundlesize',
+167 silly resolved        flow: 'flow check',
+167 silly resolved        'flow:watch': 'flow-watch',
+167 silly resolved        format: 'eslint ./**/*.js --fix',
+167 silly resolved        lint: 'eslint src',
+167 silly resolved        prettier: 'prettier */**/*.js --write',
+167 silly resolved        prepublishOnly: 'run-s build',
+167 silly resolved        dev: 'cross-env BABEL_ENV=cjs babel-node example/startServer.js',
+167 silly resolved        prebenchmarks: 'yarn run build:benchmarks',
+167 silly resolved        benchmarks: 'node benchmarks/run-headless.js',
+167 silly resolved        'build:benchmarks': '(cd benchmarks && yarn && yarn run build)',
+167 silly resolved        postinstall: 'node ./scripts/postinstall.js || exit 0' },
+167 silly resolved     repository:
+167 silly resolved      { type: 'git',
+167 silly resolved        url: 'git+https://github.com/styled-components/styled-components.git' },
+167 silly resolved     keywords:
+167 silly resolved      [ 'react',
+167 silly resolved        'css',
+167 silly resolved        'css-in-js',
+167 silly resolved        'styled-components',
+167 silly resolved        'babel-macro',
+167 silly resolved        'babel-macros',
+167 silly resolved        'styling' ],
+167 silly resolved     author: { name: 'Glen Maddern' },
+167 silly resolved     license: 'MIT',
+167 silly resolved     bugs:
+167 silly resolved      { url: 'https://github.com/styled-components/styled-components/issues' },
+167 silly resolved     homepage: 'https://styled-components.com',
+167 silly resolved     dependencies:
+167 silly resolved      { '@babel/helper-module-imports': '^7.0.0',
+167 silly resolved        '@emotion/is-prop-valid': '^0.7.3',
+167 silly resolved        '@emotion/unitless': '^0.7.0',
+167 silly resolved        'babel-plugin-styled-components': '>= 1',
+167 silly resolved        'css-to-react-native': '^2.2.2',
+167 silly resolved        'memoize-one': '^5.0.0',
+167 silly resolved        'prop-types': '^15.5.4',
+167 silly resolved        'react-is': '^16.6.0',
+167 silly resolved        stylis: '^3.5.0',
+167 silly resolved        'stylis-rule-sheet': '^0.0.10',
+167 silly resolved        'supports-color': '^5.5.0' },
+167 silly resolved     peerDependencies: { react: '>= 16.3.0', 'react-dom': '>= 16.3.0' },
+167 silly resolved     devDependencies:
+167 silly resolved      { react: '^16.6.1',
+167 silly resolved        'react-dom': '^16.6.1',
+167 silly resolved        'react-frame-component': '^4.0.2',
+167 silly resolved        'react-native': '^0.56.0',
+167 silly resolved        'react-primitives': '^0.6.1',
+167 silly resolved        'react-test-renderer': '^16.6.1' },
+167 silly resolved     jest:
+167 silly resolved      { testURL: 'http://localhost',
+167 silly resolved        clearMocks: true,
+167 silly resolved        roots: [Array],
+167 silly resolved        setupFiles: [Array],
+167 silly resolved        setupTestFrameworkScriptFile: '<rootDir>/test-utils/setupTestFramework.js',
+167 silly resolved        testPathIgnorePatterns: [Array] },
+167 silly resolved     bundlesize: [ [Object] ],
+167 silly resolved     collective:
+167 silly resolved      { type: 'opencollective',
+167 silly resolved        url: 'https://opencollective.com/styled-components' },
+167 silly resolved     gitHead: 'df2c947e0a2a61e739b391cd8a47a787a56f6f5b',
+167 silly resolved     _id: 'styled-components@4.2.0',
+167 silly resolved     _nodeVersion: '10.15.1',
+167 silly resolved     _npmVersion: 'lerna/3.10.5/node@v10.15.1+x64 (darwin)',
+167 silly resolved     _npmUser: { name: 'probablyup', email: 'probablyup@gmail.com' },
+167 silly resolved     dist:
+167 silly resolved      { integrity: 'sha512-L/LzkL3ZbBhqIVHdR7DbYujy4tqvTNRfc+4JWDCYyhTatI+8CRRQUmdaR0+ARl03DWsfKLhjewll5uNLrqrl4A==',
+167 silly resolved        shasum: '811fbbec4d64c7189f6c7482b9eb6fefa7fefef7',
+167 silly resolved        tarball: 'https://registry.npmjs.org/styled-components/-/styled-components-4.2.0.tgz',
+167 silly resolved        fileCount: 33,
+167 silly resolved        unpackedSize: 1822436,
+167 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJclmH2CRA9TVsSAnZWagAASDUP/0bJXS/hab/Q0Nz6Dyx6\n2aFSU0YeRFmF6BdgBU5DkO4rq568Z1QyNL3uz/zcaFQ7PwOdqpVdfdbxwRcA\njQNt1z2EcSx53W9+XBhVFmwA2QX752NUMpewVlBQGF3/1zTE14q6e+GPRFXD\nMqGc0Xmh5hMfZAFqLrR4q1Zvg7vqCsOFWonRbojQlnWIIPc6cxcJuclPoOJw\n6Uix9vPaSzPKU0oqpsfWF519JxDmEJ58eRKHtjipJJ1NsyICfbtEbVLHK02K\nu1lBt45GC9g981QNOVpYJZMob4rOgQ2vuaWsmjVTfLANrAgZKCLDvYHOdZ6L\nvXY9fz/L4g57m55yjzNluuLdLPGjsR/jq8SItdurrB0JPZD6LBPl834vffUU\nHNayXUJzpcKiiuY3SfEhHj4xQbzWK2ofU9cHY8jVUHp2dqt4c42fzQMSby8P\nT4yOPHeECJdRrNN3Rq7E7jrhLJNuSq79RGGujk4lqoqKyhEnSQ+72AM3aSQJ\nD+n2uaWJNrc//3W/O+1msFYiqSRbaZkBjf/Cp0tWmiDu4XYdohsEvJCYlSr2\n5NfCs99z9q6dkeU719OtG/liVlp3VvxNtP9ZMMykPllpQ8U0sya4obBFCh1h\nCctayeAV+QWNUFMsimfCSQzzhr2v0C+5teWcHHYbbXnDX4tzFOQbDPQro3cU\nn4AG\r\n=nwKX\r\n-----END PGP SIGNATURE-----\r\n' },
+167 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+167 silly resolved     directories: {},
+167 silly resolved     _npmOperationalInternal:
+167 silly resolved      { host: 's3://npm-registry-packages',
+167 silly resolved        tmp: 'tmp/styled-components_4.2.0_1553359349102_0.01846052465299941' },
+167 silly resolved     _hasShrinkwrap: false,
+167 silly resolved     _shasum: '811fbbec4d64c7189f6c7482b9eb6fefa7fefef7',
+167 silly resolved     _from: 'styled-components@^4.1.3',
+167 silly resolved     _resolved: 'https://registry.npmjs.org/styled-components/-/styled-components-4.2.0.tgz',
+167 silly resolved     readme: 'ERROR: No README data found!' } ]
+168 info install react-scripts@2.1.5 into /home/pi/chema/berry-leds_git/client-app
+169 info install babel-plugin-styled-components@1.10.0 into /home/pi/chema/berry-leds_git/client-app
+170 info install react-redux@7.0.3 into /home/pi/chema/berry-leds_git/client-app
+171 info install serve@11.0.0 into /home/pi/chema/berry-leds_git/client-app
+172 info install styled-components@4.2.0 into /home/pi/chema/berry-leds_git/client-app
+173 info installOne react-scripts@2.1.5
+174 info installOne babel-plugin-styled-components@1.10.0
+175 info installOne react-redux@7.0.3
+176 info installOne serve@11.0.0
+177 info installOne styled-components@4.2.0
+178 verbose node_modules/react-scripts unbuild
+179 verbose node_modules/babel-plugin-styled-components unbuild
+180 verbose node_modules/react-redux unbuild
+181 verbose node_modules/serve unbuild
+182 verbose node_modules/styled-components unbuild
+183 verbose tar unpack /root/.npm/react-scripts/2.1.5/package.tgz
+184 silly lockFile 5d61e32d-t-app-node-modules-react-scripts tar:///home/pi/chema/berry-leds_git/client-app/node_modules/react-scripts
+185 verbose lock tar:///home/pi/chema/berry-leds_git/client-app/node_modules/react-scripts /root/.npm/5d61e32d-t-app-node-modules-react-scripts.lock
+186 silly lockFile 21b2d951--react-scripts-2-1-5-package-tgz tar:///root/.npm/react-scripts/2.1.5/package.tgz
+187 verbose lock tar:///root/.npm/react-scripts/2.1.5/package.tgz /root/.npm/21b2d951--react-scripts-2-1-5-package-tgz.lock
+188 verbose tar unpack /root/.npm/babel-plugin-styled-components/1.10.0/package.tgz
+189 silly lockFile ef3b53c0-s-babel-plugin-styled-components tar:///home/pi/chema/berry-leds_git/client-app/node_modules/babel-plugin-styled-components
+190 verbose lock tar:///home/pi/chema/berry-leds_git/client-app/node_modules/babel-plugin-styled-components /root/.npm/ef3b53c0-s-babel-plugin-styled-components.lock
+191 silly lockFile 180b94d2-ed-components-1-10-0-package-tgz tar:///root/.npm/babel-plugin-styled-components/1.10.0/package.tgz
+192 verbose lock tar:///root/.npm/babel-plugin-styled-components/1.10.0/package.tgz /root/.npm/180b94d2-ed-components-1-10-0-package-tgz.lock
+193 verbose tar unpack /root/.npm/react-redux/7.0.3/package.tgz
+194 silly lockFile acb2bd0e-ent-app-node-modules-react-redux tar:///home/pi/chema/berry-leds_git/client-app/node_modules/react-redux
+195 verbose lock tar:///home/pi/chema/berry-leds_git/client-app/node_modules/react-redux /root/.npm/acb2bd0e-ent-app-node-modules-react-redux.lock
+196 silly lockFile 80cfd878-pm-react-redux-7-0-3-package-tgz tar:///root/.npm/react-redux/7.0.3/package.tgz
+197 verbose lock tar:///root/.npm/react-redux/7.0.3/package.tgz /root/.npm/80cfd878-pm-react-redux-7-0-3-package-tgz.lock
+198 verbose tar unpack /root/.npm/serve/11.0.0/package.tgz
+199 silly lockFile e58d8ab8-it-client-app-node-modules-serve tar:///home/pi/chema/berry-leds_git/client-app/node_modules/serve
+200 verbose lock tar:///home/pi/chema/berry-leds_git/client-app/node_modules/serve /root/.npm/e58d8ab8-it-client-app-node-modules-serve.lock
+201 silly lockFile d07fdea7-oot-npm-serve-11-0-0-package-tgz tar:///root/.npm/serve/11.0.0/package.tgz
+202 verbose lock tar:///root/.npm/serve/11.0.0/package.tgz /root/.npm/d07fdea7-oot-npm-serve-11-0-0-package-tgz.lock
+203 verbose tar unpack /root/.npm/styled-components/4.2.0/package.tgz
+204 silly lockFile 8c28cab5-p-node-modules-styled-components tar:///home/pi/chema/berry-leds_git/client-app/node_modules/styled-components
+205 verbose lock tar:///home/pi/chema/berry-leds_git/client-app/node_modules/styled-components /root/.npm/8c28cab5-p-node-modules-styled-components.lock
+206 silly lockFile 45c2a89e-led-components-4-2-0-package-tgz tar:///root/.npm/styled-components/4.2.0/package.tgz
+207 verbose lock tar:///root/.npm/styled-components/4.2.0/package.tgz /root/.npm/45c2a89e-led-components-4-2-0-package-tgz.lock
+208 silly gunzTarPerm modes [ '755', '644' ]
+209 silly gunzTarPerm modes [ '755', '644' ]
+210 silly gunzTarPerm modes [ '755', '644' ]
+211 silly gunzTarPerm modes [ '755', '644' ]
+212 silly gunzTarPerm modes [ '755', '644' ]
+213 silly gunzTarPerm extractEntry package.json
+214 silly gunzTarPerm modified mode [ 'package.json', 511, 493 ]
+215 silly gunzTarPerm extractEntry package.json
+216 silly gunzTarPerm extractEntry package.json
+217 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+218 silly gunzTarPerm extractEntry package.json
+219 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+220 silly gunzTarPerm extractEntry package.json
+221 silly gunzTarPerm extractEntry LICENSE
+222 silly gunzTarPerm modified mode [ 'LICENSE', 511, 493 ]
+223 silly gunzTarPerm extractEntry README.md
+224 silly gunzTarPerm modified mode [ 'README.md', 511, 493 ]
+225 silly gunzTarPerm extractEntry LICENSE.md
+226 silly gunzTarPerm extractEntry README.md
+227 silly gunzTarPerm extractEntry CHANGELOG.md
+228 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+229 silly gunzTarPerm extractEntry LICENSE.md
+230 silly gunzTarPerm modified mode [ 'LICENSE.md', 438, 420 ]
+231 silly gunzTarPerm extractEntry LICENSE
+232 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+233 silly gunzTarPerm extractEntry README.md
+234 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+235 silly gunzTarPerm extractEntry LICENSE
+236 silly gunzTarPerm extractEntry README.md
+237 silly gunzTarPerm extractEntry bin/react-scripts.js
+238 silly gunzTarPerm modified mode [ 'bin/react-scripts.js', 511, 493 ]
+239 silly gunzTarPerm extractEntry config/env.js
+240 silly gunzTarPerm modified mode [ 'config/env.js', 511, 493 ]
+241 silly gunzTarPerm extractEntry lib/css/placeholderUtils.js
+242 silly gunzTarPerm extractEntry lib/index.js
+243 silly gunzTarPerm extractEntry README.md
+244 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+245 silly gunzTarPerm extractEntry dist/react-redux.js
+246 silly gunzTarPerm modified mode [ 'dist/react-redux.js', 438, 420 ]
+247 silly gunzTarPerm extractEntry bin/serve.js
+248 silly gunzTarPerm modified mode [ 'bin/serve.js', 509, 493 ]
+249 silly gunzTarPerm extractEntry dist/styled-components-macro.cjs.js
+250 silly gunzTarPerm extractEntry dist/styled-components-macro.cjs.js.map
+251 silly gunzTarPerm extractEntry dist/react-redux.min.js
+252 silly gunzTarPerm modified mode [ 'dist/react-redux.min.js', 438, 420 ]
+253 silly gunzTarPerm extractEntry config/jest/babelTransform.js
+254 silly gunzTarPerm modified mode [ 'config/jest/babelTransform.js', 511, 493 ]
+255 silly gunzTarPerm extractEntry config/jest/cssTransform.js
+256 silly gunzTarPerm modified mode [ 'config/jest/cssTransform.js', 511, 493 ]
+257 silly gunzTarPerm extractEntry lib/minify/index.js
+258 silly gunzTarPerm extractEntry lib/utils/detectors.js
+259 silly gunzTarPerm extractEntry lib/utils/getName.js
+260 silly gunzTarPerm extractEntry lib/utils/hash.js
+261 silly gunzTarPerm extractEntry lib/utils/options.js
+262 silly gunzTarPerm extractEntry lib/utils/prefixDigit.js
+263 silly gunzTarPerm extractEntry lib/visitors/assignStyledRequired.js
+264 silly gunzTarPerm extractEntry lib/visitors/displayNameAndId.js
+265 silly gunzTarPerm extractEntry lib/visitors/minify.js
+266 silly gunzTarPerm extractEntry lib/visitors/pure.js
+267 silly gunzTarPerm extractEntry lib/visitors/templateLiterals/index.js
+268 silly gunzTarPerm extractEntry lib/visitors/templateLiterals/transpile.js
+269 silly gunzTarPerm extractEntry lib/visitors/transpileCssProp.js
+270 silly gunzTarPerm extractEntry dist/styled-components-macro.esm.js
+271 silly gunzTarPerm extractEntry dist/styled-components-macro.esm.js.map
+272 silly gunzTarPerm extractEntry config/jest/fileTransform.js
+273 silly gunzTarPerm modified mode [ 'config/jest/fileTransform.js', 511, 493 ]
+274 silly gunzTarPerm extractEntry config/paths.js
+275 silly gunzTarPerm modified mode [ 'config/paths.js', 511, 493 ]
+276 silly gunzTarPerm extractEntry config/webpack.config.js
+277 silly gunzTarPerm modified mode [ 'config/webpack.config.js', 511, 493 ]
+278 silly gunzTarPerm extractEntry config/webpackDevServer.config.js
+279 silly gunzTarPerm modified mode [ 'config/webpackDevServer.config.js', 511, 493 ]
+280 silly gunzTarPerm extractEntry lib/react-app.d.ts
+281 silly gunzTarPerm modified mode [ 'lib/react-app.d.ts', 511, 493 ]
+282 silly gunzTarPerm extractEntry scripts/build.js
+283 silly gunzTarPerm modified mode [ 'scripts/build.js', 511, 493 ]
+284 silly gunzTarPerm extractEntry scripts/eject.js
+285 silly gunzTarPerm modified mode [ 'scripts/eject.js', 511, 493 ]
+286 silly gunzTarPerm extractEntry scripts/init.js
+287 silly gunzTarPerm modified mode [ 'scripts/init.js', 511, 493 ]
+288 silly gunzTarPerm extractEntry scripts/start.js
+289 silly gunzTarPerm modified mode [ 'scripts/start.js', 511, 493 ]
+290 silly gunzTarPerm extractEntry scripts/test.js
+291 silly gunzTarPerm modified mode [ 'scripts/test.js', 511, 493 ]
+292 silly gunzTarPerm extractEntry scripts/utils/createJestConfig.js
+293 silly gunzTarPerm modified mode [ 'scripts/utils/createJestConfig.js', 511, 493 ]
+294 silly gunzTarPerm extractEntry scripts/utils/verifyPackageTree.js
+295 silly gunzTarPerm modified mode [ 'scripts/utils/verifyPackageTree.js', 511, 493 ]
+296 silly gunzTarPerm extractEntry scripts/utils/verifyTypeScriptSetup.js
+297 silly gunzTarPerm modified mode [ 'scripts/utils/verifyTypeScriptSetup.js', 511, 493 ]
+298 silly gunzTarPerm extractEntry template-typescript/gitignore
+299 silly gunzTarPerm modified mode [ 'template-typescript/gitignore', 511, 493 ]
+300 silly gunzTarPerm extractEntry template-typescript/public/favicon.ico
+301 silly gunzTarPerm modified mode [ 'template-typescript/public/favicon.ico', 511, 493 ]
+302 silly gunzTarPerm extractEntry template-typescript/public/index.html
+303 silly gunzTarPerm modified mode [ 'template-typescript/public/index.html', 511, 493 ]
+304 silly gunzTarPerm extractEntry template-typescript/public/manifest.json
+305 silly gunzTarPerm modified mode [ 'template-typescript/public/manifest.json', 511, 493 ]
+306 silly gunzTarPerm extractEntry template-typescript/README.md
+307 silly gunzTarPerm modified mode [ 'template-typescript/README.md', 511, 493 ]
+308 silly gunzTarPerm extractEntry template-typescript/src/App.css
+309 silly gunzTarPerm modified mode [ 'template-typescript/src/App.css', 511, 493 ]
+310 silly gunzTarPerm extractEntry template-typescript/src/App.test.tsx
+311 silly gunzTarPerm modified mode [ 'template-typescript/src/App.test.tsx', 511, 493 ]
+312 silly gunzTarPerm extractEntry template-typescript/src/App.tsx
+313 silly gunzTarPerm modified mode [ 'template-typescript/src/App.tsx', 511, 493 ]
+314 silly gunzTarPerm extractEntry template-typescript/src/index.css
+315 silly gunzTarPerm modified mode [ 'template-typescript/src/index.css', 511, 493 ]
+316 silly gunzTarPerm extractEntry template-typescript/src/index.tsx
+317 silly gunzTarPerm modified mode [ 'template-typescript/src/index.tsx', 511, 493 ]
+318 silly gunzTarPerm extractEntry template-typescript/src/logo.svg
+319 silly gunzTarPerm modified mode [ 'template-typescript/src/logo.svg', 511, 493 ]
+320 silly gunzTarPerm extractEntry template-typescript/src/serviceWorker.ts
+321 silly gunzTarPerm modified mode [ 'template-typescript/src/serviceWorker.ts', 511, 493 ]
+322 silly gunzTarPerm extractEntry template/gitignore
+323 silly gunzTarPerm modified mode [ 'template/gitignore', 511, 493 ]
+324 silly gunzTarPerm extractEntry template/public/favicon.ico
+325 silly gunzTarPerm modified mode [ 'template/public/favicon.ico', 511, 493 ]
+326 silly gunzTarPerm extractEntry template/public/index.html
+327 silly gunzTarPerm modified mode [ 'template/public/index.html', 511, 493 ]
+328 silly gunzTarPerm extractEntry template/public/manifest.json
+329 silly gunzTarPerm modified mode [ 'template/public/manifest.json', 511, 493 ]
+330 silly gunzTarPerm extractEntry template/README.md
+331 silly gunzTarPerm modified mode [ 'template/README.md', 511, 493 ]
+332 silly gunzTarPerm extractEntry template/src/App.css
+333 silly gunzTarPerm modified mode [ 'template/src/App.css', 511, 493 ]
+334 silly gunzTarPerm extractEntry template/src/App.js
+335 silly gunzTarPerm modified mode [ 'template/src/App.js', 511, 493 ]
+336 silly gunzTarPerm extractEntry template/src/App.test.js
+337 silly gunzTarPerm modified mode [ 'template/src/App.test.js', 511, 493 ]
+338 silly gunzTarPerm extractEntry template/src/index.css
+339 silly gunzTarPerm modified mode [ 'template/src/index.css', 511, 493 ]
+340 silly gunzTarPerm extractEntry template/src/index.js
+341 silly gunzTarPerm modified mode [ 'template/src/index.js', 511, 493 ]
+342 silly gunzTarPerm extractEntry template/src/logo.svg
+343 silly gunzTarPerm modified mode [ 'template/src/logo.svg', 511, 493 ]
+344 silly gunzTarPerm extractEntry template/src/serviceWorker.js
+345 silly gunzTarPerm modified mode [ 'template/src/serviceWorker.js', 511, 493 ]
+346 silly gunzTarPerm extractEntry es/alternate-renderers.js
+347 silly gunzTarPerm modified mode [ 'es/alternate-renderers.js', 438, 420 ]
+348 silly gunzTarPerm extractEntry es/components/connectAdvanced.js
+349 silly gunzTarPerm modified mode [ 'es/components/connectAdvanced.js', 438, 420 ]
+350 silly gunzTarPerm extractEntry dist/styled-components.browser.cjs.js
+351 silly gunzTarPerm extractEntry dist/styled-components.browser.cjs.js.map
+352 silly gunzTarPerm extractEntry dist/styled-components.browser.esm.js
+353 silly gunzTarPerm extractEntry dist/styled-components.browser.esm.js.map
+354 silly gunzTarPerm extractEntry dist/styled-components.cjs.js
+355 silly gunzTarPerm extractEntry es/components/Context.js
+356 silly gunzTarPerm modified mode [ 'es/components/Context.js', 438, 420 ]
+357 silly gunzTarPerm extractEntry es/components/Provider.js
+358 silly gunzTarPerm modified mode [ 'es/components/Provider.js', 438, 420 ]
+359 silly gunzTarPerm extractEntry es/connect/connect.js
+360 silly gunzTarPerm modified mode [ 'es/connect/connect.js', 438, 420 ]
+361 silly gunzTarPerm extractEntry dist/styled-components.cjs.js.map
+362 silly gunzTarPerm extractEntry es/connect/mapDispatchToProps.js
+363 silly gunzTarPerm modified mode [ 'es/connect/mapDispatchToProps.js', 438, 420 ]
+364 silly gunzTarPerm extractEntry es/connect/mapStateToProps.js
+365 silly gunzTarPerm modified mode [ 'es/connect/mapStateToProps.js', 438, 420 ]
+366 silly gunzTarPerm extractEntry es/connect/mergeProps.js
+367 silly gunzTarPerm modified mode [ 'es/connect/mergeProps.js', 438, 420 ]
+368 silly gunzTarPerm extractEntry es/connect/selectorFactory.js
+369 silly gunzTarPerm modified mode [ 'es/connect/selectorFactory.js', 438, 420 ]
+370 silly gunzTarPerm extractEntry es/connect/verifySubselectors.js
+371 silly gunzTarPerm modified mode [ 'es/connect/verifySubselectors.js', 438, 420 ]
+372 silly lockFile e58d8ab8-it-client-app-node-modules-serve tar:///home/pi/chema/berry-leds_git/client-app/node_modules/serve
+373 silly lockFile e58d8ab8-it-client-app-node-modules-serve tar:///home/pi/chema/berry-leds_git/client-app/node_modules/serve
+374 silly gunzTarPerm extractEntry dist/styled-components.esm.js
+375 silly gunzTarPerm extractEntry dist/styled-components.esm.js.map
+376 silly lockFile d07fdea7-oot-npm-serve-11-0-0-package-tgz tar:///root/.npm/serve/11.0.0/package.tgz
+377 silly lockFile d07fdea7-oot-npm-serve-11-0-0-package-tgz tar:///root/.npm/serve/11.0.0/package.tgz
+378 silly gunzTarPerm extractEntry dist/styled-components.js
+379 info preinstall serve@11.0.0
+380 verbose readDependencies using package.json deps
+381 verbose readDependencies using package.json deps
+382 silly gunzTarPerm extractEntry es/connect/wrapMapToProps.js
+383 silly gunzTarPerm modified mode [ 'es/connect/wrapMapToProps.js', 438, 420 ]
+384 silly gunzTarPerm extractEntry es/index.js
+385 silly gunzTarPerm modified mode [ 'es/index.js', 438, 420 ]
+386 verbose cache add [ 'ajv@6.5.3', null ]
+387 verbose cache add name=undefined spec="ajv@6.5.3" args=["ajv@6.5.3",null]
+388 verbose parsed url Url {
+388 verbose parsed url   protocol: null,
+388 verbose parsed url   slashes: null,
+388 verbose parsed url   auth: null,
+388 verbose parsed url   host: null,
+388 verbose parsed url   port: null,
+388 verbose parsed url   hostname: null,
+388 verbose parsed url   hash: null,
+388 verbose parsed url   search: null,
+388 verbose parsed url   query: null,
+388 verbose parsed url   pathname: 'ajv@6.5.3',
+388 verbose parsed url   path: 'ajv@6.5.3',
+388 verbose parsed url   href: 'ajv@6.5.3' }
+389 verbose cache add [ 'arg@2.0.0', null ]
+390 verbose cache add name=undefined spec="arg@2.0.0" args=["arg@2.0.0",null]
+391 verbose parsed url Url {
+391 verbose parsed url   protocol: null,
+391 verbose parsed url   slashes: null,
+391 verbose parsed url   auth: null,
+391 verbose parsed url   host: null,
+391 verbose parsed url   port: null,
+391 verbose parsed url   hostname: null,
+391 verbose parsed url   hash: null,
+391 verbose parsed url   search: null,
+391 verbose parsed url   query: null,
+391 verbose parsed url   pathname: 'arg@2.0.0',
+391 verbose parsed url   path: 'arg@2.0.0',
+391 verbose parsed url   href: 'arg@2.0.0' }
+392 verbose cache add [ 'boxen@1.3.0', null ]
+393 verbose cache add name=undefined spec="boxen@1.3.0" args=["boxen@1.3.0",null]
+394 verbose parsed url Url {
+394 verbose parsed url   protocol: null,
+394 verbose parsed url   slashes: null,
+394 verbose parsed url   auth: null,
+394 verbose parsed url   host: null,
+394 verbose parsed url   port: null,
+394 verbose parsed url   hostname: null,
+394 verbose parsed url   hash: null,
+394 verbose parsed url   search: null,
+394 verbose parsed url   query: null,
+394 verbose parsed url   pathname: 'boxen@1.3.0',
+394 verbose parsed url   path: 'boxen@1.3.0',
+394 verbose parsed url   href: 'boxen@1.3.0' }
+395 verbose cache add [ 'chalk@2.4.1', null ]
+396 verbose cache add name=undefined spec="chalk@2.4.1" args=["chalk@2.4.1",null]
+397 verbose parsed url Url {
+397 verbose parsed url   protocol: null,
+397 verbose parsed url   slashes: null,
+397 verbose parsed url   auth: null,
+397 verbose parsed url   host: null,
+397 verbose parsed url   port: null,
+397 verbose parsed url   hostname: null,
+397 verbose parsed url   hash: null,
+397 verbose parsed url   search: null,
+397 verbose parsed url   query: null,
+397 verbose parsed url   pathname: 'chalk@2.4.1',
+397 verbose parsed url   path: 'chalk@2.4.1',
+397 verbose parsed url   href: 'chalk@2.4.1' }
+398 verbose cache add [ 'clipboardy@1.2.3', null ]
+399 verbose cache add name=undefined spec="clipboardy@1.2.3" args=["clipboardy@1.2.3",null]
+400 verbose parsed url Url {
+400 verbose parsed url   protocol: null,
+400 verbose parsed url   slashes: null,
+400 verbose parsed url   auth: null,
+400 verbose parsed url   host: null,
+400 verbose parsed url   port: null,
+400 verbose parsed url   hostname: null,
+400 verbose parsed url   hash: null,
+400 verbose parsed url   search: null,
+400 verbose parsed url   query: null,
+400 verbose parsed url   pathname: 'clipboardy@1.2.3',
+400 verbose parsed url   path: 'clipboardy@1.2.3',
+400 verbose parsed url   href: 'clipboardy@1.2.3' }
+401 verbose cache add [ 'compression@1.7.3', null ]
+402 verbose cache add name=undefined spec="compression@1.7.3" args=["compression@1.7.3",null]
+403 verbose parsed url Url {
+403 verbose parsed url   protocol: null,
+403 verbose parsed url   slashes: null,
+403 verbose parsed url   auth: null,
+403 verbose parsed url   host: null,
+403 verbose parsed url   port: null,
+403 verbose parsed url   hostname: null,
+403 verbose parsed url   hash: null,
+403 verbose parsed url   search: null,
+403 verbose parsed url   query: null,
+403 verbose parsed url   pathname: 'compression@1.7.3',
+403 verbose parsed url   path: 'compression@1.7.3',
+403 verbose parsed url   href: 'compression@1.7.3' }
+404 verbose cache add [ 'serve-handler@6.0.0', null ]
+405 verbose cache add name=undefined spec="serve-handler@6.0.0" args=["serve-handler@6.0.0",null]
+406 verbose parsed url Url {
+406 verbose parsed url   protocol: null,
+406 verbose parsed url   slashes: null,
+406 verbose parsed url   auth: null,
+406 verbose parsed url   host: null,
+406 verbose parsed url   port: null,
+406 verbose parsed url   hostname: null,
+406 verbose parsed url   hash: null,
+406 verbose parsed url   search: null,
+406 verbose parsed url   query: null,
+406 verbose parsed url   pathname: 'serve-handler@6.0.0',
+406 verbose parsed url   path: 'serve-handler@6.0.0',
+406 verbose parsed url   href: 'serve-handler@6.0.0' }
+407 verbose cache add [ 'update-check@1.5.2', null ]
+408 verbose cache add name=undefined spec="update-check@1.5.2" args=["update-check@1.5.2",null]
+409 verbose parsed url Url {
+409 verbose parsed url   protocol: null,
+409 verbose parsed url   slashes: null,
+409 verbose parsed url   auth: null,
+409 verbose parsed url   host: null,
+409 verbose parsed url   port: null,
+409 verbose parsed url   hostname: null,
+409 verbose parsed url   hash: null,
+409 verbose parsed url   search: null,
+409 verbose parsed url   query: null,
+409 verbose parsed url   pathname: 'update-check@1.5.2',
+409 verbose parsed url   path: 'update-check@1.5.2',
+409 verbose parsed url   href: 'update-check@1.5.2' }
+410 verbose cache add [ '@zeit/schemas@2.6.0', null ]
+411 verbose cache add name=undefined spec="@zeit/schemas@2.6.0" args=["@zeit/schemas@2.6.0",null]
+412 verbose parsed url Url {
+412 verbose parsed url   protocol: null,
+412 verbose parsed url   slashes: null,
+412 verbose parsed url   auth: null,
+412 verbose parsed url   host: null,
+412 verbose parsed url   port: null,
+412 verbose parsed url   hostname: null,
+412 verbose parsed url   hash: null,
+412 verbose parsed url   search: null,
+412 verbose parsed url   query: null,
+412 verbose parsed url   pathname: '@zeit/schemas@2.6.0',
+412 verbose parsed url   path: '@zeit/schemas@2.6.0',
+412 verbose parsed url   href: '@zeit/schemas@2.6.0' }
+413 silly gunzTarPerm extractEntry dist/styled-components.js.map
+414 silly gunzTarPerm extractEntry dist/styled-components.min.js
+415 verbose cache add name="ajv" spec="6.5.3" args=["ajv","6.5.3"]
+416 verbose parsed url Url {
+416 verbose parsed url   protocol: null,
+416 verbose parsed url   slashes: null,
+416 verbose parsed url   auth: null,
+416 verbose parsed url   host: null,
+416 verbose parsed url   port: null,
+416 verbose parsed url   hostname: null,
+416 verbose parsed url   hash: null,
+416 verbose parsed url   search: null,
+416 verbose parsed url   query: null,
+416 verbose parsed url   pathname: '6.5.3',
+416 verbose parsed url   path: '6.5.3',
+416 verbose parsed url   href: '6.5.3' }
+417 verbose addNamed [ 'ajv', '6.5.3' ]
+418 verbose addNamed [ '6.5.3', '6.5.3' ]
+419 silly lockFile 0d944759-ajv-6-5-3 ajv@6.5.3
+420 verbose lock ajv@6.5.3 /root/.npm/0d944759-ajv-6-5-3.lock
+421 verbose cache add name="arg" spec="2.0.0" args=["arg","2.0.0"]
+422 verbose parsed url Url {
+422 verbose parsed url   protocol: null,
+422 verbose parsed url   slashes: null,
+422 verbose parsed url   auth: null,
+422 verbose parsed url   host: null,
+422 verbose parsed url   port: null,
+422 verbose parsed url   hostname: null,
+422 verbose parsed url   hash: null,
+422 verbose parsed url   search: null,
+422 verbose parsed url   query: null,
+422 verbose parsed url   pathname: '2.0.0',
+422 verbose parsed url   path: '2.0.0',
+422 verbose parsed url   href: '2.0.0' }
+423 verbose addNamed [ 'arg', '2.0.0' ]
+424 verbose addNamed [ '2.0.0', '2.0.0' ]
+425 silly lockFile 360fe691-arg-2-0-0 arg@2.0.0
+426 verbose lock arg@2.0.0 /root/.npm/360fe691-arg-2-0-0.lock
+427 verbose cache add name="boxen" spec="1.3.0" args=["boxen","1.3.0"]
+428 verbose parsed url Url {
+428 verbose parsed url   protocol: null,
+428 verbose parsed url   slashes: null,
+428 verbose parsed url   auth: null,
+428 verbose parsed url   host: null,
+428 verbose parsed url   port: null,
+428 verbose parsed url   hostname: null,
+428 verbose parsed url   hash: null,
+428 verbose parsed url   search: null,
+428 verbose parsed url   query: null,
+428 verbose parsed url   pathname: '1.3.0',
+428 verbose parsed url   path: '1.3.0',
+428 verbose parsed url   href: '1.3.0' }
+429 verbose addNamed [ 'boxen', '1.3.0' ]
+430 verbose addNamed [ '1.3.0', '1.3.0' ]
+431 silly lockFile 0c47151c-boxen-1-3-0 boxen@1.3.0
+432 verbose lock boxen@1.3.0 /root/.npm/0c47151c-boxen-1-3-0.lock
+433 verbose cache add name="chalk" spec="2.4.1" args=["chalk","2.4.1"]
+434 verbose parsed url Url {
+434 verbose parsed url   protocol: null,
+434 verbose parsed url   slashes: null,
+434 verbose parsed url   auth: null,
+434 verbose parsed url   host: null,
+434 verbose parsed url   port: null,
+434 verbose parsed url   hostname: null,
+434 verbose parsed url   hash: null,
+434 verbose parsed url   search: null,
+434 verbose parsed url   query: null,
+434 verbose parsed url   pathname: '2.4.1',
+434 verbose parsed url   path: '2.4.1',
+434 verbose parsed url   href: '2.4.1' }
+435 verbose addNamed [ 'chalk', '2.4.1' ]
+436 verbose addNamed [ '2.4.1', '2.4.1' ]
+437 silly lockFile 1b381e70-chalk-2-4-1 chalk@2.4.1
+438 verbose lock chalk@2.4.1 /root/.npm/1b381e70-chalk-2-4-1.lock
+439 verbose cache add name="clipboardy" spec="1.2.3" args=["clipboardy","1.2.3"]
+440 verbose parsed url Url {
+440 verbose parsed url   protocol: null,
+440 verbose parsed url   slashes: null,
+440 verbose parsed url   auth: null,
+440 verbose parsed url   host: null,
+440 verbose parsed url   port: null,
+440 verbose parsed url   hostname: null,
+440 verbose parsed url   hash: null,
+440 verbose parsed url   search: null,
+440 verbose parsed url   query: null,
+440 verbose parsed url   pathname: '1.2.3',
+440 verbose parsed url   path: '1.2.3',
+440 verbose parsed url   href: '1.2.3' }
+441 verbose addNamed [ 'clipboardy', '1.2.3' ]
+442 verbose addNamed [ '1.2.3', '1.2.3' ]
+443 silly lockFile a89e5151-clipboardy-1-2-3 clipboardy@1.2.3
+444 verbose lock clipboardy@1.2.3 /root/.npm/a89e5151-clipboardy-1-2-3.lock
+445 verbose cache add name="compression" spec="1.7.3" args=["compression","1.7.3"]
+446 verbose parsed url Url {
+446 verbose parsed url   protocol: null,
+446 verbose parsed url   slashes: null,
+446 verbose parsed url   auth: null,
+446 verbose parsed url   host: null,
+446 verbose parsed url   port: null,
+446 verbose parsed url   hostname: null,
+446 verbose parsed url   hash: null,
+446 verbose parsed url   search: null,
+446 verbose parsed url   query: null,
+446 verbose parsed url   pathname: '1.7.3',
+446 verbose parsed url   path: '1.7.3',
+446 verbose parsed url   href: '1.7.3' }
+447 verbose addNamed [ 'compression', '1.7.3' ]
+448 verbose addNamed [ '1.7.3', '1.7.3' ]
+449 silly lockFile 4e7a9886-compression-1-7-3 compression@1.7.3
+450 verbose lock compression@1.7.3 /root/.npm/4e7a9886-compression-1-7-3.lock
+451 verbose cache add name="serve-handler" spec="6.0.0" args=["serve-handler","6.0.0"]
+452 verbose parsed url Url {
+452 verbose parsed url   protocol: null,
+452 verbose parsed url   slashes: null,
+452 verbose parsed url   auth: null,
+452 verbose parsed url   host: null,
+452 verbose parsed url   port: null,
+452 verbose parsed url   hostname: null,
+452 verbose parsed url   hash: null,
+452 verbose parsed url   search: null,
+452 verbose parsed url   query: null,
+452 verbose parsed url   pathname: '6.0.0',
+452 verbose parsed url   path: '6.0.0',
+452 verbose parsed url   href: '6.0.0' }
+453 verbose addNamed [ 'serve-handler', '6.0.0' ]
+454 verbose addNamed [ '6.0.0', '6.0.0' ]
+455 silly lockFile b5f5479c-serve-handler-6-0-0 serve-handler@6.0.0
+456 verbose lock serve-handler@6.0.0 /root/.npm/b5f5479c-serve-handler-6-0-0.lock
+457 verbose cache add name="update-check" spec="1.5.2" args=["update-check","1.5.2"]
+458 verbose parsed url Url {
+458 verbose parsed url   protocol: null,
+458 verbose parsed url   slashes: null,
+458 verbose parsed url   auth: null,
+458 verbose parsed url   host: null,
+458 verbose parsed url   port: null,
+458 verbose parsed url   hostname: null,
+458 verbose parsed url   hash: null,
+458 verbose parsed url   search: null,
+458 verbose parsed url   query: null,
+458 verbose parsed url   pathname: '1.5.2',
+458 verbose parsed url   path: '1.5.2',
+458 verbose parsed url   href: '1.5.2' }
+459 verbose addNamed [ 'update-check', '1.5.2' ]
+460 verbose addNamed [ '1.5.2', '1.5.2' ]
+461 silly lockFile d0f1ae39-update-check-1-5-2 update-check@1.5.2
+462 verbose lock update-check@1.5.2 /root/.npm/d0f1ae39-update-check-1-5-2.lock
+463 verbose cache add name="" spec="zeit/schemas@2.6.0" args=["","zeit/schemas@2.6.0"]
+464 verbose parsed url Url {
+464 verbose parsed url   protocol: null,
+464 verbose parsed url   slashes: null,
+464 verbose parsed url   auth: null,
+464 verbose parsed url   host: null,
+464 verbose parsed url   port: null,
+464 verbose parsed url   hostname: null,
+464 verbose parsed url   hash: null,
+464 verbose parsed url   search: null,
+464 verbose parsed url   query: null,
+464 verbose parsed url   pathname: 'zeit/schemas@2.6.0',
+464 verbose parsed url   path: 'zeit/schemas@2.6.0',
+464 verbose parsed url   href: 'zeit/schemas@2.6.0' }
+465 verbose cache add name="zeit/schemas" spec="2.6.0" args=["zeit/schemas","2.6.0"]
+466 verbose parsed url Url {
+466 verbose parsed url   protocol: null,
+466 verbose parsed url   slashes: null,
+466 verbose parsed url   auth: null,
+466 verbose parsed url   host: null,
+466 verbose parsed url   port: null,
+466 verbose parsed url   hostname: null,
+466 verbose parsed url   hash: null,
+466 verbose parsed url   search: null,
+466 verbose parsed url   query: null,
+466 verbose parsed url   pathname: '2.6.0',
+466 verbose parsed url   path: '2.6.0',
+466 verbose parsed url   href: '2.6.0' }
+467 verbose addNamed [ 'zeit/schemas', '2.6.0' ]
+468 verbose addNamed [ '2.6.0', '2.6.0' ]
+469 silly lockFile b5bfc23d-zeit-schemas-2-6-0 zeit/schemas@2.6.0
+470 verbose lock zeit/schemas@2.6.0 /root/.npm/b5bfc23d-zeit-schemas-2-6-0.lock
+471 silly gunzTarPerm extractEntry dist/styled-components.min.js.map
+472 silly gunzTarPerm extractEntry macro/package.json
+473 silly gunzTarPerm extractEntry es/utils/batch.js
+474 silly gunzTarPerm modified mode [ 'es/utils/batch.js', 438, 420 ]
+475 silly gunzTarPerm extractEntry es/utils/isPlainObject.js
+476 silly gunzTarPerm modified mode [ 'es/utils/isPlainObject.js', 438, 420 ]
+477 verbose request where is /arg
+478 verbose request registry https://registry.npmjs.org/
+479 verbose url raw /arg
+480 verbose url resolving [ 'https://registry.npmjs.org/', './arg' ]
+481 verbose url resolved https://registry.npmjs.org/arg
+482 verbose request where is https://registry.npmjs.org/arg
+483 info trying registry request attempt 1 at 12:16:43
+484 verbose etag W/"30e792ab7dbf20e9cd4ae167c28146d9"
+485 http GET https://registry.npmjs.org/arg
+486 verbose request where is /boxen
+487 verbose request registry https://registry.npmjs.org/
+488 verbose url raw /boxen
+489 verbose url resolving [ 'https://registry.npmjs.org/', './boxen' ]
+490 verbose url resolved https://registry.npmjs.org/boxen
+491 verbose request where is https://registry.npmjs.org/boxen
+492 info trying registry request attempt 1 at 12:16:43
+493 verbose etag W/"b61d13d004b4411053a08d6a157638d5"
+494 http GET https://registry.npmjs.org/boxen
+495 verbose request where is /clipboardy
+496 verbose request registry https://registry.npmjs.org/
+497 verbose url raw /clipboardy
+498 verbose url resolving [ 'https://registry.npmjs.org/', './clipboardy' ]
+499 verbose url resolved https://registry.npmjs.org/clipboardy
+500 verbose request where is https://registry.npmjs.org/clipboardy
+501 info trying registry request attempt 1 at 12:16:43
+502 verbose etag W/"075bac49a88827b8b00b480f616c97b0"
+503 http GET https://registry.npmjs.org/clipboardy
+504 verbose request where is /chalk
+505 verbose request registry https://registry.npmjs.org/
+506 verbose url raw /chalk
+507 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+508 verbose url resolved https://registry.npmjs.org/chalk
+509 verbose request where is https://registry.npmjs.org/chalk
+510 info trying registry request attempt 1 at 12:16:43
+511 verbose etag W/"57b0c57e0f1946126bd3a7061ddf30b7"
+512 http GET https://registry.npmjs.org/chalk
+513 verbose request where is /ajv
+514 verbose request registry https://registry.npmjs.org/
+515 verbose url raw /ajv
+516 verbose url resolving [ 'https://registry.npmjs.org/', './ajv' ]
+517 verbose url resolved https://registry.npmjs.org/ajv
+518 verbose request where is https://registry.npmjs.org/ajv
+519 info trying registry request attempt 1 at 12:16:43
+520 verbose etag W/"c4086e0713da49d1e96340a566aaf40a"
+521 http GET https://registry.npmjs.org/ajv
+522 silly gunzTarPerm extractEntry native/dist/styled-components.native.cjs.js
+523 verbose request where is /compression
+524 verbose request registry https://registry.npmjs.org/
+525 verbose url raw /compression
+526 verbose url resolving [ 'https://registry.npmjs.org/', './compression' ]
+527 verbose url resolved https://registry.npmjs.org/compression
+528 verbose request where is https://registry.npmjs.org/compression
+529 info trying registry request attempt 1 at 12:16:43
+530 verbose etag W/"68c27c02882478df4974359d3918d0ee"
+531 http GET https://registry.npmjs.org/compression
+532 verbose request where is /update-check
+533 verbose request registry https://registry.npmjs.org/
+534 verbose url raw /update-check
+535 verbose url resolving [ 'https://registry.npmjs.org/', './update-check' ]
+536 verbose url resolved https://registry.npmjs.org/update-check
+537 verbose request where is https://registry.npmjs.org/update-check
+538 info trying registry request attempt 1 at 12:16:43
+539 verbose etag W/"789ba7ccb0e7005136828efd4f463086"
+540 http GET https://registry.npmjs.org/update-check
+541 verbose request where is /serve-handler
+542 verbose request registry https://registry.npmjs.org/
+543 verbose url raw /serve-handler
+544 verbose url resolving [ 'https://registry.npmjs.org/', './serve-handler' ]
+545 verbose url resolved https://registry.npmjs.org/serve-handler
+546 verbose request where is https://registry.npmjs.org/serve-handler
+547 info trying registry request attempt 1 at 12:16:44
+548 verbose etag W/"43caa844f76c257a5e0790a3eeb49553"
+549 http GET https://registry.npmjs.org/serve-handler
+550 verbose request where is /zeit/schemas
+551 verbose request registry https://registry.npmjs.org/
+552 verbose url raw /zeit/schemas
+553 verbose url resolving [ 'https://registry.npmjs.org/', './zeit/schemas' ]
+554 verbose url resolved https://registry.npmjs.org/zeit/schemas
+555 verbose request where is https://registry.npmjs.org/zeit/schemas
+556 info trying registry request attempt 1 at 12:16:44
+557 http GET https://registry.npmjs.org/zeit/schemas
+558 silly gunzTarPerm extractEntry es/utils/reactBatchedUpdates.js
+559 silly gunzTarPerm modified mode [ 'es/utils/reactBatchedUpdates.js', 438, 420 ]
+560 silly gunzTarPerm extractEntry es/utils/reactBatchedUpdates.native.js
+561 silly gunzTarPerm modified mode [ 'es/utils/reactBatchedUpdates.native.js', 438, 420 ]
+562 silly gunzTarPerm extractEntry es/utils/shallowEqual.js
+563 silly gunzTarPerm modified mode [ 'es/utils/shallowEqual.js', 438, 420 ]
+564 silly gunzTarPerm extractEntry native/dist/styled-components.native.cjs.js.map
+565 silly gunzTarPerm extractEntry native/dist/styled-components.native.esm.js
+566 silly gunzTarPerm extractEntry es/utils/Subscription.js
+567 silly gunzTarPerm modified mode [ 'es/utils/Subscription.js', 438, 420 ]
+568 http 304 https://registry.npmjs.org/clipboardy
+569 silly registry.get cb [ 304,
+569 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+569 silly registry.get     connection: 'close',
+569 silly registry.get     'set-cookie':
+569 silly registry.get      [ '__cfduid=d2a808a628ba225814d1d7033e1e7f1b61558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+569 silly registry.get     'cf-cache-status': 'HIT',
+569 silly registry.get     'cache-control': 'max-age=300',
+569 silly registry.get     'cf-ray': '4dcefecb6d69bd9b-AMS',
+569 silly registry.get     etag: '"075bac49a88827b8b00b480f616c97b0"',
+569 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+569 silly registry.get     'last-modified': 'Tue, 09 Apr 2019 05:24:48 GMT',
+569 silly registry.get     vary: 'accept-encoding, accept',
+569 silly registry.get     'x-amz-meta-rev': '30-9d94f9acd670da5ae577b3bf8ea50bf3',
+569 silly registry.get     server: 'cloudflare' } ]
+570 verbose etag https://registry.npmjs.org/clipboardy from cache
+571 http 304 https://registry.npmjs.org/boxen
+572 silly registry.get cb [ 304,
+572 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+572 silly registry.get     connection: 'close',
+572 silly registry.get     'set-cookie':
+572 silly registry.get      [ '__cfduid=df4eb55bf10ad6b2a39a1c3f234608e121558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+572 silly registry.get     'cf-cache-status': 'HIT',
+572 silly registry.get     'cache-control': 'max-age=300',
+572 silly registry.get     'cf-ray': '4dcefecb6e4dbdf5-AMS',
+572 silly registry.get     etag: '"b61d13d004b4411053a08d6a157638d5"',
+572 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+572 silly registry.get     'last-modified': 'Tue, 30 Apr 2019 12:06:57 GMT',
+572 silly registry.get     vary: 'accept-encoding, accept',
+572 silly registry.get     'x-amz-meta-rev': '33-d2e7296b5cafbf7cc8f0249916d379c1',
+572 silly registry.get     server: 'cloudflare' } ]
+573 verbose etag https://registry.npmjs.org/boxen from cache
+574 http 304 https://registry.npmjs.org/ajv
+575 silly registry.get cb [ 304,
+575 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+575 silly registry.get     connection: 'close',
+575 silly registry.get     'set-cookie':
+575 silly registry.get      [ '__cfduid=d9df22e20135a3f6630ad44a14cb2ddcb1558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+575 silly registry.get     'cf-cache-status': 'HIT',
+575 silly registry.get     'cache-control': 'max-age=300',
+575 silly registry.get     'cf-ray': '4dcefecb6bb3c863-AMS',
+575 silly registry.get     etag: '"c4086e0713da49d1e96340a566aaf40a"',
+575 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+575 silly registry.get     'last-modified': 'Sat, 09 Mar 2019 07:38:04 GMT',
+575 silly registry.get     vary: 'accept-encoding, accept',
+575 silly registry.get     'x-amz-meta-rev': '404-ed55b89d8e92225a5db0f6229b15d2e0',
+575 silly registry.get     server: 'cloudflare' } ]
+576 verbose etag https://registry.npmjs.org/ajv from cache
+577 http 304 https://registry.npmjs.org/chalk
+578 silly registry.get cb [ 304,
+578 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+578 silly registry.get     connection: 'close',
+578 silly registry.get     'set-cookie':
+578 silly registry.get      [ '__cfduid=df9416caa8a1edd7ff208ffdc45c3672a1558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+578 silly registry.get     'cf-cache-status': 'HIT',
+578 silly registry.get     'cache-control': 'max-age=300',
+578 silly registry.get     'cf-ray': '4dcefecb7b5dc85f-AMS',
+578 silly registry.get     etag: '"57b0c57e0f1946126bd3a7061ddf30b7"',
+578 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+578 silly registry.get     'last-modified': 'Tue, 30 Apr 2019 02:24:40 GMT',
+578 silly registry.get     vary: 'accept-encoding, accept',
+578 silly registry.get     'x-amz-meta-rev': '1138-32ba671323684c7d50db04a12f6886c4',
+578 silly registry.get     server: 'cloudflare' } ]
+579 verbose etag https://registry.npmjs.org/chalk from cache
+580 http 304 https://registry.npmjs.org/update-check
+581 silly registry.get cb [ 304,
+581 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+581 silly registry.get     connection: 'close',
+581 silly registry.get     'set-cookie':
+581 silly registry.get      [ '__cfduid=d6e416de0ceb5031397b00c3e6ebc63d61558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+581 silly registry.get     'cf-cache-status': 'HIT',
+581 silly registry.get     'cache-control': 'max-age=300',
+581 silly registry.get     'cf-ray': '4dcefecb8d8b9d1e-AMS',
+581 silly registry.get     etag: '"789ba7ccb0e7005136828efd4f463086"',
+581 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+581 silly registry.get     'last-modified': 'Wed, 09 Jan 2019 09:41:03 GMT',
+581 silly registry.get     vary: 'accept-encoding, accept',
+581 silly registry.get     'x-amz-meta-rev': '18-02044a27368c71e50ee29b3e9a5993c0',
+581 silly registry.get     server: 'cloudflare' } ]
+582 verbose etag https://registry.npmjs.org/update-check from cache
+583 silly gunzTarPerm extractEntry es/utils/verifyPlainObject.js
+584 silly gunzTarPerm modified mode [ 'es/utils/verifyPlainObject.js', 438, 420 ]
+585 silly gunzTarPerm extractEntry es/utils/warning.js
+586 silly gunzTarPerm modified mode [ 'es/utils/warning.js', 438, 420 ]
+587 http 304 https://registry.npmjs.org/serve-handler
+588 silly registry.get cb [ 304,
+588 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+588 silly registry.get     connection: 'close',
+588 silly registry.get     'set-cookie':
+588 silly registry.get      [ '__cfduid=de5a918cc5ba1e4d6a9582ff6b4e327151558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+588 silly registry.get     'cf-cache-status': 'HIT',
+588 silly registry.get     'cache-control': 'max-age=300',
+588 silly registry.get     'cf-ray': '4dcefecb8cdd72b1-AMS',
+588 silly registry.get     etag: '"43caa844f76c257a5e0790a3eeb49553"',
+588 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+588 silly registry.get     'last-modified': 'Fri, 24 May 2019 22:04:05 GMT',
+588 silly registry.get     vary: 'accept-encoding, accept',
+588 silly registry.get     'x-amz-meta-rev': '61-f0fc59abfef082ab1533efe8b1698ada',
+588 silly registry.get     server: 'cloudflare' } ]
+589 verbose etag https://registry.npmjs.org/serve-handler from cache
+590 http 304 https://registry.npmjs.org/arg
+591 silly registry.get cb [ 304,
+591 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+591 silly registry.get     connection: 'close',
+591 silly registry.get     'set-cookie':
+591 silly registry.get      [ '__cfduid=d645cd1d6400f00976457a5a1126f00011558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+591 silly registry.get     'cf-cache-status': 'HIT',
+591 silly registry.get     'cache-control': 'max-age=300',
+591 silly registry.get     'cf-ray': '4dcefecb7ad37257-AMS',
+591 silly registry.get     etag: '"30e792ab7dbf20e9cd4ae167c28146d9"',
+591 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+591 silly registry.get     'last-modified': 'Tue, 21 May 2019 17:58:50 GMT',
+591 silly registry.get     vary: 'accept-encoding, accept',
+591 silly registry.get     'x-amz-meta-rev': '84-6b2f49ef0a625203c663b4db4489530f',
+591 silly registry.get     server: 'cloudflare' } ]
+592 verbose etag https://registry.npmjs.org/arg from cache
+593 http 304 https://registry.npmjs.org/compression
+594 silly registry.get cb [ 304,
+594 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+594 silly registry.get     connection: 'close',
+594 silly registry.get     'set-cookie':
+594 silly registry.get      [ '__cfduid=d91196d960db05b60b01ef1d0efa8d89a1558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+594 silly registry.get     'cf-cache-status': 'HIT',
+594 silly registry.get     'cache-control': 'max-age=300',
+594 silly registry.get     'cf-ray': '4dcefecb981ac775-AMS',
+594 silly registry.get     etag: '"68c27c02882478df4974359d3918d0ee"',
+594 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+594 silly registry.get     'last-modified': 'Mon, 18 Mar 2019 14:43:28 GMT',
+594 silly registry.get     vary: 'accept-encoding, accept',
+594 silly registry.get     'x-amz-meta-rev': '296-9e18156f0db6c14bf9bd83ae73dbe0e8',
+594 silly registry.get     server: 'cloudflare' } ]
+595 verbose etag https://registry.npmjs.org/compression from cache
+596 silly gunzTarPerm extractEntry native/dist/styled-components.native.esm.js.map
+597 silly gunzTarPerm extractEntry native/package.json
+598 silly gunzTarPerm extractEntry es/utils/wrapActionCreators.js
+599 silly gunzTarPerm modified mode [ 'es/utils/wrapActionCreators.js', 438, 420 ]
+600 silly gunzTarPerm extractEntry lib/alternate-renderers.js
+601 silly gunzTarPerm modified mode [ 'lib/alternate-renderers.js', 438, 420 ]
+602 silly lockFile a89e5151-clipboardy-1-2-3 clipboardy@1.2.3
+603 silly lockFile a89e5151-clipboardy-1-2-3 clipboardy@1.2.3
+604 silly lockFile 0c47151c-boxen-1-3-0 boxen@1.3.0
+605 silly lockFile 0c47151c-boxen-1-3-0 boxen@1.3.0
+606 silly lockFile 0d944759-ajv-6-5-3 ajv@6.5.3
+607 silly lockFile 0d944759-ajv-6-5-3 ajv@6.5.3
+608 silly lockFile d0f1ae39-update-check-1-5-2 update-check@1.5.2
+609 silly lockFile d0f1ae39-update-check-1-5-2 update-check@1.5.2
+610 silly lockFile 1b381e70-chalk-2-4-1 chalk@2.4.1
+611 silly lockFile 1b381e70-chalk-2-4-1 chalk@2.4.1
+612 http 405 https://registry.npmjs.org/zeit/schemas
+613 silly registry.get cb [ 405,
+613 silly registry.get   { date: 'Sun, 26 May 2019 10:16:44 GMT',
+613 silly registry.get     'content-type': 'application/json',
+613 silly registry.get     'content-length': '63',
+613 silly registry.get     connection: 'close',
+613 silly registry.get     'set-cookie':
+613 silly registry.get      [ '__cfduid=d06b8c142fa07e51b82513257a1c2832f1558865804; expires=Mon, 25-May-20 10:16:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+613 silly registry.get     'cf-ray': '4dcefecb9c039ce8-AMS',
+613 silly registry.get     allow: 'PUT',
+613 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+613 silly registry.get     vary: 'Accept-Encoding',
+613 silly registry.get     server: 'cloudflare' } ]
+614 silly gunzTarPerm extractEntry lib/components/connectAdvanced.js
+615 silly gunzTarPerm modified mode [ 'lib/components/connectAdvanced.js', 438, 420 ]
+616 silly gunzTarPerm extractEntry lib/components/Context.js
+617 silly gunzTarPerm modified mode [ 'lib/components/Context.js', 438, 420 ]
+618 silly gunzTarPerm extractEntry primitives/dist/styled-components-primitives.cjs.js
+619 silly gunzTarPerm extractEntry primitives/dist/styled-components-primitives.cjs.js.map
+620 silly gunzTarPerm extractEntry primitives/dist/styled-components-primitives.esm.js
+621 silly lockFile b5f5479c-serve-handler-6-0-0 serve-handler@6.0.0
+622 silly lockFile b5f5479c-serve-handler-6-0-0 serve-handler@6.0.0
+623 silly lockFile 360fe691-arg-2-0-0 arg@2.0.0
+624 silly lockFile 360fe691-arg-2-0-0 arg@2.0.0
+625 silly lockFile 4e7a9886-compression-1-7-3 compression@1.7.3
+626 silly lockFile 4e7a9886-compression-1-7-3 compression@1.7.3
+627 silly lockFile b5bfc23d-zeit-schemas-2-6-0 zeit/schemas@2.6.0
+628 silly lockFile b5bfc23d-zeit-schemas-2-6-0 zeit/schemas@2.6.0
+629 verbose about to build /home/pi/chema/berry-leds_git/client-app/node_modules/serve
+630 verbose node_modules/serve unbuild
+631 info preuninstall serve@11.0.0
+632 info uninstall serve@11.0.0
+633 silly gunzTarPerm extractEntry lib/components/Provider.js
+634 silly gunzTarPerm modified mode [ 'lib/components/Provider.js', 438, 420 ]
+635 silly gunzTarPerm extractEntry lib/connect/connect.js
+636 silly gunzTarPerm modified mode [ 'lib/connect/connect.js', 438, 420 ]
+637 verbose true,/home/pi/chema/berry-leds_git/client-app/node_modules,/home/pi/chema/berry-leds_git/client-app/node_modules unbuild serve@11.0.0
+638 verbose /home/pi/chema/berry-leds_git/client-app/node_modules/.bin,[object Object] binRoot
+639 info postuninstall serve@11.0.0
+640 silly gunzTarPerm extractEntry primitives/dist/styled-components-primitives.esm.js.map
+641 silly gunzTarPerm extractEntry primitives/package.json
+642 silly gunzTarPerm extractEntry scripts/postinstall.js
+643 silly gunzTarPerm extractEntry test-utils/index.js
+644 silly gunzTarPerm extractEntry test-utils/setupTestFramework.js
+645 silly gunzTarPerm extractEntry lib/connect/mapDispatchToProps.js
+646 silly gunzTarPerm modified mode [ 'lib/connect/mapDispatchToProps.js', 438, 420 ]
+647 silly gunzTarPerm extractEntry lib/connect/mapStateToProps.js
+648 silly gunzTarPerm modified mode [ 'lib/connect/mapStateToProps.js', 438, 420 ]
+649 error Error: Method Not Allowed
+649 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+649 error     at /usr/share/npm/lib/cache/add-named.js:120:12
+649 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+649 error     at FSReqWrap.oncomplete (fs.js:135:15)
+650 error If you need help, you may report this *entire* log,
+650 error including the npm and node versions, at:
+650 error     <http://github.com/npm/npm/issues>
+651 error System Linux 4.14.98-v7+
+652 error command "/usr/bin/node" "/usr/bin/npm" "i"
+653 error cwd /home/pi/chema/berry-leds_git/client-app
+654 error node -v v8.11.1
+655 error npm -v 1.4.21
+656 error code E405
+657 verbose exit [ 1, true ]

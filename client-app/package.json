@@ -16,7 +16,6 @@
     "flow-bin": "^0.93.0",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
-    "react-cursor-position": "^3.0.3",
     "react-dom": "^16.8.1",
     "react-redux": "^7.0.3",
     "react-scripts": "2.1.5",

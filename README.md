@@ -61,6 +61,32 @@ Consiste en una aplicacion basada en REACT
 
 ## Issues
 
+### Project installation in Raspberry
+- Node version 
+```
+sudo -i
+apt-get remove nodered -y
+apt-get remove nodejs nodejs-legacy -y
+exit
+
+url -L https://git.io/n-install | bash
+```
+* Resolve conflict with* 
+ Aborting, because n and/or Node.js-related binaries are already
+  in the $PATH:
+           
+         /usr/sbin/node
+
+```
+sudo apt-get --purge remove node
+sudo apt-get --purge remove nodejs-legacy
+sudo apt-get --purge remove nodejs
+```
+
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs build-essential
+```
 
 ## Extension
 
